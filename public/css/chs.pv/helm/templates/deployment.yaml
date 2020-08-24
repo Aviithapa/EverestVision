@@ -1,0 +1,71 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "chs.fullname" . }}
+  labels:
+    app: {{ template "chs.name" . }}
+    chart: {{ template "chs.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    segment: {{ default "main" .Values.segment }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "chs.name" . }}
+      release: {{ .Release.Name }}
+  minReadySeconds: {{ default 3 .Values.update.minReadySeconds }}
+  strategy:
+    type: {{ default "RollingUpdate" .Values.update.type }}
+    rollingUpdate:
+      updatePeriodSeconds: {{ default 1 .Values.update.updatePeriodSeconds }}
+      intervalSeconds: {{ default 1 .Values.update.intervalSeconds }}
+      maxSurge: {{ default "25%" .Values.update.maxSurge }}
+      maxUnavailable: {{ default "20%" .Values.update.maxUnavailable }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "chs.name" . }}
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.hc.liveness.path }}
+              port: http
+            initialDelaySeconds: {{ .Values.hc.liveness.delay }}
+            periodSeconds: {{ .Values.hc.liveness.period }}
+            timeoutSeconds: {{ .Values.hc.liveness.timeout }}
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.hc.readiness.path }}
+              port: http
+            initialDelaySeconds: {{ .Values.hc.readiness.delay }}
+            periodSeconds: {{ .Values.hc.readiness.period }}
+            timeoutSeconds: {{ .Values.hc.readiness.timeout }}
+          envFrom:
+            - configMapRef:
+                name: {{ template "chs.fullname" . }}
+            - secretRef:
+                name: {{ template "chs.fullname" . }}           
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+    {{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}

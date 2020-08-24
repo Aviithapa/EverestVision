@@ -1,0 +1,86 @@
+    .btn {
+      border: 0;
+      @include font($header-font, normal, 900);
+      @include border-radius(5px);
+      @include transition(all, .5s, ease);
+
+      &:hover {
+        color: $color-white;
+      }
+
+      &--brand {
+        background: $color-brand;
+        color: $color-white;
+
+        &:hover {
+          background-color: darken($color-brand, 15%) !important;
+          color: $color-white;
+        }
+      }
+
+      &--dark {
+        background: $color-dark;
+        color: $color-white;
+
+        &:hover {
+          background-color: darken($color-dark, 15%);
+        }
+      }
+
+      &--blk {
+        background: $color-black;
+        color: $color-white;
+
+        &:hover {
+          background-color: darken($color-dark, 15%);
+        }
+      }
+
+      &--large {
+        padding: 1.8rem 3rem 1.5rem 3rem;
+        letter-spacing: 0.75px;
+        font-size: 2rem;
+        line-height: 27px;
+      }
+
+      &--medium {
+        padding: 1.3rem 2rem 1rem 2rem;
+        letter-spacing: 0.68px;
+        font-size: 1.8rem;
+      }
+
+      &--small {
+        padding: 1.3rem 2rem 1rem 2rem;
+        letter-spacing: 0.75px;
+        font-size: 1.6rem;
+      }
+
+      &--experience {
+        padding: 1.1rem 1.6rem .8rem 1.6rem !important;
+      }
+
+      &--heavy {
+        font-weight: 900;
+      }
+
+      &--blue {
+        background: $color-blue;
+        color: $color-white;
+        font-size: 1.8rem;
+
+        &:hover {
+          background-color: darken($color-blue, 15%);
+        }
+      }
+
+      &--paypal {
+        border: 1px solid rgba(0,0,0,.2);
+        padding: 18px 5px;
+        &:hover {
+          border-color: $color-brand;
+        }
+        img {
+          max-width: 50%;
+        }
+      }
+    }

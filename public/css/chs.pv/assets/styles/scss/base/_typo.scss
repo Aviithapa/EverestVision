@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,500,700,900,900i&subset=latin-ext,vietnamese');
+
+$base-font: "Nunito",
+Helvetica,
+Arial,
+sans-serif;
+$header-font: "Avenir LT Std",
+Helvetica,
+Arial,
+sans-serif;
+
+body {
+    font-family: $base-font;
+    // @include font-size(1.6);
+    @include font-smoothing(on);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font;
+}
+
+p {
+    font-family: $base-font;
+}
+
+a {
+    @include transition(all, .5s, ease);
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.default-size{
+    font-size: 1.5rem;
+}
+
+.title{
+  color: #ED9121;
+  font-family: $header-font;
+  font-size: 3.5rem;
+  font-weight: 900 !important;
+  letter-spacing: 0.75px;
+  line-height: 48px;
+  text-align: center;
+
+  @include respond(bootstrap-small){
+    font-size: 2.5rem;
+  }
+
+
+    &--xl {
+        font-size: 4.5rem;
+        font-weight: 900;
+        letter-spacing: 1.13px;
+        line-height: 61px;
+        text-align: center;
+        text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &--large {
+        font-size: 3.5rem;
+    }
+
+    &--medium {
+        font-size: 3rem;
+    }
+
+    &--sm {
+        font-size: 1.7rem;
+    }
+
+    &--small {
+        font-size: 2.5rem;
+    }
+
+    &--xs {
+        font-size: 2rem;
+    }
+
+    &--xxs {
+        font-size: 1.5rem !important;
+    }
+
+    &--xxxs {
+        font-size: 1.2rem;
+    }
+
+    &--price {
+      @include font($header-font, normal, 900);
+      font-size: 2rem !important;
+    }
+}
+
+.base {
+    font-family: $base-font;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+p {
+    color: #5E5E5E;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+}
+
+.p {
+    p{
+        span{
+            color: #5E5E5E !important;
+        }
+    }
+}

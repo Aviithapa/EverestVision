@@ -1,0 +1,18 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: {{ template "chs.fullname" . }}
+  labels:
+    app: {{ template "chs.name" . }}
+    chart: {{ template "chs.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    segment: {{ default "main" .Values.segment }}
+spec:
+  maxReplicas: {{ .Values.PodAutoscaler.maxReplicas }}
+  minReplicas: {{ .Values.PodAutoscaler.minReplicas }}
+  scaleTargetRef:
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    name: {{ template "chs.fullname" . }}
+  targetCPUUtilizationPercentage: {{ .Values.PodAutoscaler.targetCPU }}

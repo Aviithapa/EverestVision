@@ -1,0 +1,69 @@
+.homestays {
+  &-topbar {
+    padding: 0 5rem;
+
+    @include respond(tab-land) {
+      padding: 0 2rem;
+      flex-wrap: wrap;
+    }
+
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+
+    .m-l-auto {
+      @include respond(tab-land) {
+        margin-left: 0;
+      }
+    }
+
+    .select-component {
+      @include respond(tab-land) {
+        margin: 1rem 0;
+      }
+
+      @include respond(bootstrap-small) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-row {
+    transition: all .7sec ease-in-out;
+  }
+}
+
+.homestay {
+  &-list {
+    &-header {
+      padding: 2.5rem 3.5rem 2.5rem 2.5rem;
+
+      .vdp-datepicker input {
+        border: none;
+      }
+
+      .chn-arrow-icon {
+        right: 2.5rem;
+      }
+
+      .v-select .dropdown-toggle {
+        border: none;
+
+        input {
+          cursor: pointer;
+        }
+      }
+
+      .v-select.single .selected-tag {
+        margin-top: 0;
+        height: 100%;
+        // max-width: calc(100% - 40px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block !important;
+        line-height: 50px !important;
+      }
+    }
+  }
+}

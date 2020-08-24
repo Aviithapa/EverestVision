@@ -1,0 +1,23 @@
+.checkout-price-info {
+  &.affix {
+    width: 100%;
+    top: 0 !important;
+    // transition: all .5s ease;
+
+    &-top {
+      width: 100%;
+    }
+
+    &-bottom {
+      position: absolute;
+      top: 0 !important;
+    }
+  }
+
+}
+
+.vue-affix {
+  @media(max-width: 991px) {
+    top: 0 !important;
+  }
+}

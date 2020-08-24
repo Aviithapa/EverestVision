@@ -1,0 +1,118 @@
+//Why travel with us
+.why_travel {
+  position: relative;
+  overflow: hidden;
+
+  &-desc {
+    max-width: 455px;
+  }
+}
+
+.impact-home-img {
+  // margin-bottom: 50px;
+  margin: 3rem 0 8rem 0;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
+//Subscribe section
+.subscribe {
+  padding: 5rem 0;
+  background: $color-brand;
+}
+
+//As Seen In
+.asSeenIn {
+  overflow-x: hidden;
+
+  &-desc {
+    margin: 0 auto 9.5rem auto;
+    max-width: 55.1rem;
+  }
+
+  &-press {
+    span {
+      padding: 2rem 3rem;
+      display: inline-block;
+      vertical-align: middle;
+      @include filter(grayscale, 100%);
+      transition: all .5s ease;
+      opacity: .55;
+
+      &:hover {
+        @include filter(grayscale, 0);
+        opacity: 1;
+      }
+
+      img {
+        max-width: 150px;
+
+        @include respond(tab-land) {
+          max-width: 135px;
+        }
+
+        @include respond(tab-port) {
+          max-width: 110px;
+        }
+
+        @include respond(phone) {
+          width: 135px;
+        }
+      }
+    }
+  }
+}
+
+//what our community
+
+.community {
+  background: #F3F7F0;
+}
+
+.experiences .container-fluid .row>div {
+  width: 33.33%;
+
+  @include respond(tab-port) {
+    width: 100%
+  }
+}
+
+.experiences .container-fluid .row>div:nth-child(2) {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  align-items: bottom;
+  justify-content: flex-start
+}
+
+.testimonial>div:nth-child(1) {
+  width: 100%;
+}
+
+.howYourTrip,
+.what {
+  padding: 0 75px;
+
+  @include respond(tab-land) {
+    padding: 0 30px;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 30px;
+  }
+
+  @include respond(phone) {
+    padding: 0 20px;
+  }
+}

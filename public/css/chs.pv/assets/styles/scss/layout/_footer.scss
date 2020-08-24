@@ -1,0 +1,53 @@
+.footer {
+  padding: 5.5rem 0;
+  background: $color-footer;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $color-footerText;
+  letter-spacing: 1px;
+  line-height: 20px;
+
+  a {
+    @include links($color-footerText, $color-footerText, #fff, $color-footerText);
+  }
+
+  .link-brand {
+    color: $color-brand;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  p {
+    color: $color-footerText;
+  }
+
+  &-title {
+    padding-top: 2rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0.75;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    line-height: 27px;
+
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &-text {
+    color: $color-footerText;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.coming-soon {
+  font-size: 12px;
+  font-weight: 400;
+}

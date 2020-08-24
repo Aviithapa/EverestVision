@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    // overflow-x: hidden;
+    // font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+    @include font-smoothing(on);
+}
+a:hover{
+    transition:all .7s ease-in-out;
+    color: darken($color-brand, 10%)
+
+}
+a:focus{
+    outline: 0 !important;
+    text-decoration: none;
+}

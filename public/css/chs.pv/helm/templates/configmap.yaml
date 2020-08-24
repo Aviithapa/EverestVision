@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "chs.fullname" . }}
+  labels:
+    app: {{ template "chs.name" . }}
+    chart: {{ template "chs.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    segment: {{ default "main" .Values.segment }}
+data:
+  APP_NAME: {{ template "chs.fullname" . }}
+  APP_URL: https://{{ template "segmentdash" . }}chs.pvdemo.com
+  PORT: "3000"
+  HOST: "0.0.0.0"

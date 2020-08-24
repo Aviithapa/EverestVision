@@ -1,0 +1,31 @@
+.error {
+  &-wrap {
+    font-size: 1.6rem;
+    padding: 75px 0;
+
+    &__icon {
+      width: 100%;
+      text-align: center;
+      svg {
+        @include respond(phone) {
+          height: 175px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &__content {
+      @include respond(phone) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__header {
+      font-size: 5rem;
+    }
+    &__header-2 {
+      font-size: 3.5rem;
+    }
+  }
+}

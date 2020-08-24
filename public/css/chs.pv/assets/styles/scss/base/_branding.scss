@@ -1,0 +1,57 @@
+// Color Variables
+
+
+$color-black: #000;
+$color-white: #fff;
+$color-brand:#F7941E;
+$color-footer:#1a1a1a;
+$color-footerText:#999;
+$color-dark:#643a08;
+
+$color-light: #C1C1C1;
+
+$color-header:#000;
+$color-hover:#404040;
+$color-base:#3c3c3c;
+$color-desc:#777777;
+$color-line:#d8d8d8;
+$color-link:#bfbfbf;
+$color-next:#333;
+$color-blue:#1e599b;
+
+$bg-color-1: #F4F6F1;
+
+.fade-color {
+  color: #999;
+}
+
+.brand {
+  color: $color-brand !important;
+}
+
+.dark {
+  color: $color-next !important;
+}
+
+.black {
+  color: $color-footer !important;
+}
+
+.white {
+  color: $color-white;
+}
+
+.link{
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  &--brand{
+    &:hover{
+      color: $color-brand !important; 
+    }
+  }
+  &--white{
+    &:hover{
+      color: $color-white !important;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "apiBaseUrl" : "http://api.chs.pv/v1",
+  "stripe_public_key" : "pk_test_EaFks7U9K82aTFXEXjk6N1JN",
+  "intercom_app_id" : "tdgwsi1z",
+  "facebook_app_id" : "125411077550816",
+  "app_url" : "https://communityhomestay.com"
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Avenir LT Std';
+    src: url('#{$theme-fontpath}/AvenirLTStd-Heavy.eot');
+    src: url('#{$theme-fontpath}/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('#{$theme-fontpath}/AvenirLTStd-Heavy.woff2') format('woff2'),
+        url('#{$theme-fontpath}/AvenirLTStd-Heavy.woff') format('woff'),
+        url('#{$theme-fontpath}/AvenirLTStd-Heavy.ttf') format('truetype'),
+        url('#{$theme-fontpath}/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}

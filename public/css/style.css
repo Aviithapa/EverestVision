@@ -1,0 +1,8394 @@
+html,
+body,
+.colblock,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+th,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    line-height: 1.5em
+}
+
+html {
+    font-size: 16px
+}
+
+body {
+    font-size: 100%
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block
+}
+
+a:active {
+    outline: none
+}
+
+:focus {
+    -moz-outline-style: none;
+    outline: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+textarea,
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=submit],
+input[type=tel],
+button {
+    -webkit-appearance: none
+}
+
+input,
+textarea,
+select {
+    border-radius: 0
+}
+
+input,
+textarea,
+select,
+option,
+button {
+    font-family: inherit
+}
+
+#galactus {
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    padding-top: 3.75rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+#galactus .col1,
+#galactus .col2,
+#galactus .col2-right,
+#galactus .col2-left,
+#galactus .nav-bar:after {
+    clear: both
+}
+
+#galactus .col1,
+#galactus .col2,
+#galactus .col2-right,
+#galactus .col2-left {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+#galactus .nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0
+}
+
+#galactus .nav-bar .colblock {
+    padding: 0;
+    margin: 0 -100% 0 0;
+    width: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#galactus .col1:after,
+#galactus .col2:after,
+#galactus .col2-right:after,
+#galactus .col2-left:after,
+#galactus .nav-bar:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+#galactus .col1 .colblock,
+#galactus .col2 .colblock,
+#galactus .col2-right .colblock,
+#galactus .col2-left .colblock {
+    float: left;
+    margin-right: -100%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#galactus .col1 .colblock:nth-child(n+1),
+#galactus .col2 .colblock:nth-child(n+1),
+#galactus .col2-right .colblock:nth-child(n+1),
+#galactus .col2-left .colblock:nth-child(n+1) {
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    clear: both
+}
+
+@media all and (max-width:480px) {
+    #galactus .col1>.colblock {
+        float: left;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem))
+    }
+    #galactus .col2>.colblock {
+        float: left;
+        margin-right: -100%;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        clear: both
+    }
+    #galactus .col2-right>.colblock {
+        float: left;
+        margin-right: -100%;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        clear: both
+    }
+    #galactus .col2-left>.colblock {
+        float: left;
+        margin-right: -100%;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        clear: both
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #galactus .col1>.colblock {
+        float: left;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem))
+    }
+    #galactus .col2>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 6/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2>.colblock:nth-child(2n+1) {
+        margin-left: 1rem;
+        clear: both
+    }
+    #galactus .col2>.colblock:nth-child(2n+2) {
+        margin-left: calc((100% - 1rem) * 6/12 + 1rem);
+        clear: none
+    }
+    #galactus .col2-right>.colblock {
+        float: left;
+        margin-right: -100%;
+        margin-left: 1rem!important;
+        width: calc(100% - (2* 1rem));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        clear: both
+    }
+    #galactus .col2-left>.colblock {
+        float: left;
+        margin-right: -100%;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        clear: both
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .col1>.colblock {
+        float: left;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem))
+    }
+    #galactus .col2>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 6/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2>.colblock:nth-child(2n+1) {
+        margin-left: 1rem;
+        clear: both
+    }
+    #galactus .col2>.colblock:nth-child(2n+2) {
+        margin-left: calc((100% - 1rem) * 6/12 + 1rem);
+        clear: none
+    }
+    #galactus .col2-right>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 4/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2-right>.colblock:nth-child(2n+1) {
+        margin-left: calc((100% - 1rem) * 4/12 + 1rem);
+        clear: both;
+        width: calc((100% - 1rem) * 8/12 - 1rem)
+    }
+    #galactus .col2-right>.colblock:nth-child(2n+2) {
+        margin-left: 1rem;
+        clear: none
+    }
+    #galactus .col2-left>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 8/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2-left>.colblock:nth-child(2n+1) {
+        margin-left: 1rem;
+        clear: both
+    }
+    #galactus .col2-left>.colblock:nth-child(2n+2) {
+        margin-left: calc((100% - 1rem) * 8/12 + 1rem);
+        clear: none;
+        width: calc((100% - 1rem) * 4/12 - 1rem)
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .col1>.colblock {
+        float: left;
+        margin-left: 1rem!important;
+        width: calc(100% - (2 * 1rem))
+    }
+    #galactus .col2>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 6/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2>.colblock:nth-child(2n+1) {
+        margin-left: 1rem;
+        clear: both
+    }
+    #galactus .col2>.colblock:nth-child(2n+2) {
+        margin-left: calc((100% - 1rem) * 6/12 + 1rem);
+        clear: none
+    }
+    #galactus .col2-right>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 4/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2-right>.colblock:nth-child(2n+1) {
+        margin-left: calc((100% - 1rem) * 4/12 + 1rem);
+        clear: both;
+        width: calc((100% - 1rem) * 8/12 - 1rem)
+    }
+    #galactus .col2-right>.colblock:nth-child(2n+2) {
+        margin-left: 1rem;
+        clear: none
+    }
+    #galactus .col2-left>.colblock {
+        float: left;
+        margin-right: -100%;
+        width: calc((100% - 1rem) * 8/12 - 1rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+    #galactus .col2-left>.colblock:nth-child(2n+1) {
+        margin-left: 1rem;
+        clear: both
+    }
+    #galactus .col2-left>.colblock:nth-child(2n+2) {
+        margin-left: calc((100% - 1rem) * 8/12 + 1rem);
+        clear: none;
+        width: calc((100% - 1rem) * 4/12 - 1rem)
+    }
+}
+
+#galactus img {
+    max-width: 100%;
+    width: auto;
+    height: auto
+}
+
+#galactus .no-top-margin {
+    margin-top: 0!important
+}
+
+#galactus .no-bottom-margin {
+    margin-bottom: 0!important
+}
+
+#galactus .no-vertical-margin {
+    margin-top: 0!important;
+    margin-bottom: 0!important
+}
+
+#galactus .no-top-padding {
+    padding-top: 0!important
+}
+
+#galactus .no-bottom-padding {
+    padding-bottom: 0!important
+}
+
+#galactus .no-vertical-padding {
+    padding-top: 0!important;
+    padding-bottom: 0!important
+}
+
+#galactus .col1.wrapped,
+#galactus .col2.wrapped,
+#galactus .col2-right.wrapped,
+#galactus .col2-left.wrapped {
+    max-width: 1220px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    float: none!important
+}
+
+#galactus .col1 .colblock.no-horizontal-margin,
+#galactus .col2 .colblock.no-horizontal-margin,
+#galactus .col2-right .colblock.no-horizontal-margin,
+#galactus .col2-left .colblock.no-horizontal-margin {
+    width: 100%;
+    margin-left: 0!important;
+    margin-right: 0!important
+}
+
+#galactus .col1 .colblock .readability-wrapped {
+    max-width: 960px;
+    margin: 0 auto
+}
+
+#NavBar .DisplayFlex {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#NavBar .AccountModule {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%
+}
+
+#NavBar .Brand {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #NavBar .Brand {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+        flex: 0 1 150px
+    }
+}
+
+@media all and (min-width:1025px) {
+    #NavBar .Brand {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+        flex: 0 1 150px
+    }
+}
+
+#NavBar .Brand a,
+#NavBar .Brand img {
+    display: inline-block;
+    height: 3.75rem
+}
+
+#NavBar .SearchRowBackground {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 3.75rem;
+    background-color: #fff
+}
+
+#NavBar .HeaderSearch {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 0%;
+    flex: 0 1 0%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #NavBar .HeaderSearch {
+        -webkit-box-flex: 5;
+        -ms-flex: 5 1 0%;
+        flex: 5 1 0%
+    }
+}
+
+@media all and (min-width:1025px) {
+    #NavBar .HeaderSearch {
+        -webkit-box-flex: 5;
+        -ms-flex: 5 1 0%;
+        flex: 5 1 0%
+    }
+}
+
+.SearchPage #NavBar #HeaderSearch {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+#NavBar img {
+    vertical-align: top
+}
+
+#NavBar #SearchRow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3.75rem;
+    z-index: 125;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 4px -4px rgba(0, 0, 0, .3);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px)
+}
+
+#NavBar #SearchRow #SearchRowWrapper {
+    position: relative;
+    z-index: 125;
+    height: 3.75rem;
+    background-color: #fff
+}
+
+#NavBar #SearchRow #SearchRowColBlock {
+    overflow: visible
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #NavBar #SearchRow .HeaderToggle {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #NavBar #SearchRow .HeaderToggle {
+        display: none
+    }
+}
+
+#NavBar #BreadcrumbRow {
+    background-color: #fff
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .ArticlePage #NavBar #BreadcrumbRow {
+        background-color: #e8eced
+    }
+}
+
+@media all and (min-width:1025px) {
+    .ArticlePage #NavBar #BreadcrumbRow {
+        background-color: #e8eced
+    }
+}
+
+.SearchPage #NavBar #BreadcrumbRow {
+    background-color: #e8eced
+}
+
+#NavBar .AccountModule {
+    padding: 2.1rem 0
+}
+
+#NavBar .AccountModule.InView {
+    background-color: #fff
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #NavBar .AccountModule.InView {
+        background-color: transparent
+    }
+}
+
+@media all and (min-width:1025px) {
+    #NavBar .AccountModule.InView {
+        background-color: transparent
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #NavBar .AccountModule {
+        padding: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #NavBar .AccountModule {
+        padding: 0
+    }
+}
+
+#Footer {
+    margin-top: 6rem;
+    padding-top: 0;
+    background: #fff url(//monet-prtl-co.imgix.net/Shared/Footer/bg-mobile-top.svg) no-repeat top left
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer {
+        margin-top: 0;
+        padding-top: 6rem;
+        background: 0 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer {
+        margin-top: 0;
+        padding-top: 6rem;
+        background: 0 0
+    }
+}
+
+#Footer #FooterScrollToTopWrapper {
+    display: block;
+    position: absolute;
+    top: -7rem;
+    height: 6rem;
+    left: 50%;
+    margin-left: -3rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterScrollToTopWrapper {
+        top: -9rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterScrollToTopWrapper {
+        top: -9rem
+    }
+}
+
+#Footer #FooterMain {
+    display: block;
+    position: relative;
+    padding: 4rem 0;
+    background: transparent url(//monet-prtl-co.imgix.net/Shared/Footer/bg-mobile-bottom.svg) no-repeat bottom right;
+    background-size: 50%
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #Footer #FooterMain {
+        padding: 4rem 0
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterMain {
+        padding: 6rem 0;
+        background: #f95c39
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterMain {
+        padding: 6rem 0;
+        background: #f95c39
+    }
+}
+
+#Footer #FooterMain .FooterMainCol1 {
+    position: relative
+}
+
+#Footer #FooterMain .FooterMainCol1 .colblock {
+    overflow: visible
+}
+
+#Footer .BgBars {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer .BgBars {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer .BgBars {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+#Footer .BgBars .BgBarA,
+#Footer .BgBars .BgBarB,
+#Footer .BgBars .BgBarC,
+#Footer .BgBars .BgBarD {
+    display: block;
+    height: 100%;
+    -webkit-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    transform: skewX(-45deg)
+}
+
+#Footer .BgBars .BgBarA {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 40%;
+    flex: 1 0 40%;
+    background: #cc4c2f;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left
+}
+
+#Footer .BgBars .BgBarB {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%;
+    background: 0 0;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left
+}
+
+#Footer .BgBars .BgBarC {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 12.5%;
+    flex: 1 0 12.5%;
+    background: #fff;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left
+}
+
+#Footer .BgBars .BgBarD {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 7.5%;
+    flex: 1 0 7.5%;
+    background: #247ba0;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left
+}
+
+#Footer #FooterMainInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background: rgba(255, 255, 255, .5);
+    padding: 1rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterMainInner {
+        background: 0 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterMainInner {
+        background: 0 0
+    }
+}
+
+#Footer #FooterMainInner>div {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2rem;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #Footer #FooterMainInner>div {
+        width: 50%;
+        min-width: 240px
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterMainInner>div {
+        width: 30%;
+        margin: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterMainInner>div {
+        width: 30%;
+        margin: 0
+    }
+}
+
+#Footer #FooterBranding {
+    background: #fff
+}
+
+#Footer #FooterBranding .FlexBranding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterBranding .FlexBranding {
+        margin-bottom: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterBranding .FlexBranding {
+        margin-bottom: 0
+    }
+}
+
+#Footer #FooterBranding .FlexBranding>.FooterLogo {
+    display: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterBranding .FlexBranding>.FooterLogo {
+        display: block;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterBranding .FlexBranding>.FooterLogo {
+        display: block;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%
+    }
+}
+
+#Footer #FooterBranding .FlexBranding>.FooterLogo .SPLogo {
+    height: 2rem
+}
+
+#Footer #FooterBranding .FlexBranding>.FooterDisclaimer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Footer #FooterBranding .FlexBranding>.FooterDisclaimer {
+        display: block;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%
+    }
+    #Footer #FooterBranding .FlexBranding>.FooterDisclaimer #FooterDisclaimer {
+        margin-right: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Footer #FooterBranding .FlexBranding>.FooterDisclaimer {
+        display: block;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%
+    }
+}
+
+#Footer #FooterCopyright {
+    background: #fff;
+    text-align: center;
+    color: #313233
+}
+
+#Footer #FooterCopyright .FooterCopyrightCol1 .FooterCopyrightColBlock:nth-child(n+1) {
+    margin-top: 0
+}
+
+.ChampionButton {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 0 solid #cc4c2f;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    background-color: #f95c39;
+    text-decoration: none;
+    color: #fff;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border: 0
+}
+
+.ChampionButton:hover {
+    background-color: #cc4c2f;
+    color: #fff;
+    text-decoration: none
+}
+
+@media(hover:none) {
+    .ChampionButton:hover {
+        background-color: #f95c39;
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+.ChampionButton:visited {
+    color: #fff
+}
+
+.ChampionButton:disabled {
+    opacity: .5
+}
+
+.ChampionButton:disabled:hover {
+    background-color: #f95c39
+}
+
+.ChampionButton:hover,
+.ChampionButton:focus {
+    background-color: #cc4c2f
+}
+
+.ChampionButton.Yellow {
+    border-color: #cc8a0c;
+    background-color: #fcab10
+}
+
+.ChampionButton.Yellow:hover,
+.ChampionButton.Yellow:focus {
+    background-color: #cc8a0c
+}
+
+@media(hover:none) {
+    .ChampionButton.Yellow:hover {
+        background-color: #fcab10
+    }
+}
+
+.ChampionButton.Yellow:disabled:hover {
+    background-color: #fcab10
+}
+
+.DriverButton {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 0 solid #cc4c2f;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    background-color: #f95c39;
+    text-decoration: none;
+    color: #fff;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    padding: .375rem 1rem;
+    border: .125rem solid #f95c39;
+    background: #f95c39;
+    color: #fff
+}
+
+.DriverButton:hover {
+    background-color: #cc4c2f;
+    color: #fff;
+    text-decoration: none
+}
+
+@media(hover:none) {
+    .DriverButton:hover {
+        background-color: #f95c39;
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+.DriverButton:visited {
+    color: #fff
+}
+
+.DriverButton:disabled {
+    opacity: .5
+}
+
+.DriverButton:disabled:hover {
+    background-color: #f95c39
+}
+
+.DriverButton:hover,
+.DriverButton:focus {
+    background: #cc4c2f;
+    color: #fff;
+    border-color: #cc4c2f
+}
+
+@media(hover:none) {
+    .DriverButton:hover,
+    .DriverButton:focus {
+        background: #f95c39;
+        color: #f95c39;
+        border-color: #f95c39
+    }
+}
+
+.DriverButton:visited {
+    color: #fff
+}
+
+.DriverButton.OnDarkBackground {
+    background: 0 0;
+    color: #fff;
+    border-color: #fff
+}
+
+.DriverButton.OnDarkBackground:visited {
+    color: #fff
+}
+
+.DriverButton.OnDarkBackground:hover,
+.DriverButton.OnDarkBackground:focus {
+    background: 0 0;
+    color: #dce1e5;
+    border-color: #dce1e5
+}
+
+@media(hover:none) {
+    .DriverButton.OnDarkBackground:hover,
+    .DriverButton.OnDarkBackground:focus {
+        background: 0 0;
+        color: #fff;
+        border-color: #fff
+    }
+}
+
+.DriverButton.Blue {
+    background: #247ba0;
+    border-color: #247ba0;
+    color: #fff
+}
+
+.DriverButton.Blue:visited {
+    color: #fff
+}
+
+.DriverButton.Blue:hover {
+    background: #1b5a75;
+    border-color: #1b5a75;
+    color: #fff
+}
+
+@media(hover:none) {
+    .DriverButton.Blue:hover {
+        background: #247ba0;
+        border-color: #247ba0;
+        color: #fff
+    }
+}
+
+.DriverButton.Yellow {
+    background: #fcab10;
+    border-color: #fcab10;
+    color: #fff
+}
+
+.DriverButton.Yellow:visited {
+    color: #fff
+}
+
+.DriverButton.Yellow:hover {
+    background: #cc8a0c;
+    border-color: #cc8a0c;
+    color: #fff
+}
+
+@media(hover:none) {
+    .DriverButton.Yellow:hover {
+        background: #fcab10;
+        border-color: #fcab10;
+        color: #fff
+    }
+}
+
+.NavigatorButton {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 0 solid #cc4c2f;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    background-color: #f95c39;
+    text-decoration: none;
+    color: #fff;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    border: .125rem solid #dce1e5;
+    background: #fff;
+    color: #313233
+}
+
+.NavigatorButton:hover {
+    background-color: #cc4c2f;
+    color: #fff;
+    text-decoration: none
+}
+
+@media(hover:none) {
+    .NavigatorButton:hover {
+        background-color: #f95c39;
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+.NavigatorButton:visited {
+    color: #fff
+}
+
+.NavigatorButton:disabled {
+    opacity: .5
+}
+
+.NavigatorButton:disabled:hover {
+    background-color: #f95c39
+}
+
+.NavigatorButton:visited {
+    color: #313233
+}
+
+.NavigatorButton:hover {
+    background: #fff;
+    color: #313233;
+    border-color: #313233
+}
+
+@media(hover:none) {
+    .NavigatorButton:hover {
+        color: #313233;
+        border-color: #dce1e5
+    }
+}
+
+.HelperButton {
+    display: block;
+    padding: .565rem 0;
+    background: 0 0;
+    border: 0;
+    color: #4b93b1;
+    font-weight: 600;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .HelperButton {
+        padding: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    .HelperButton {
+        padding: 0
+    }
+}
+
+.HelperButton:visited {
+    color: #4b93b1
+}
+
+.HelperButton:hover,
+.HelperButton:focus {
+    color: #247ba0;
+    background: 0 0;
+    text-decoration: none
+}
+
+.HelperButton:hover>span,
+.HelperButton:focus>span {
+    border-color: #247ba0
+}
+
+.HelperButton>span {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    display: block;
+    border-bottom: .125rem solid transparent
+}
+
+.HelperButton.LowPriority {
+    color: #c4c9cc
+}
+
+.HelperButton.LowPriority:visited {
+    color: #c4c9cc
+}
+
+.HelperButton.LowPriority:hover,
+.HelperButton.LowPriority:focus {
+    color: #c4c9cc;
+    background: 0 0
+}
+
+.HelperButton.LowPriority:hover>span,
+.HelperButton.LowPriority:focus>span {
+    display: block;
+    border-color: #c4c9cc
+}
+
+input[type=checkbox].Checkbox {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute
+}
+
+input[type=checkbox].Checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .3rem;
+    padding: 2px;
+    border: 1px solid #313233;
+    border-radius: 2px;
+    background-color: #fff;
+    vertical-align: bottom;
+    cursor: pointer;
+    text-align: center;
+    font-family: icomoon;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    line-height: 1rem
+}
+
+input[type=checkbox].Checkbox+label:hover::before {
+    -webkit-box-shadow: 0 0 3px 0 #4b93b1, inset 0 0 3px 0 #4b93b1;
+    box-shadow: 0 0 3px 0 #4b93b1, inset 0 0 3px 0 #4b93b1;
+    border-color: #4b93b1
+}
+
+input[type=checkbox].Checkbox:checked+label::before {
+    content: '\e934';
+    border-color: #4b93b1;
+    background-color: #4b93b1;
+    color: #fff
+}
+
+input[type=checkbox].Checkbox.Invert+label::before {
+    border-color: rgba(255, 255, 255, .6);
+    background-color: transparent;
+    color: #fff
+}
+
+input[type=checkbox].Checkbox.Invert+label:hover::before {
+    -webkit-box-shadow: 0 0 3px 0 #fff, inset 0 0 3px 0 #fff;
+    box-shadow: 0 0 3px 0 #fff, inset 0 0 3px 0 #fff;
+    border-color: #fff
+}
+
+input[type=checkbox].Checkbox.Invert:checked+label::before {
+    border-color: #fff;
+    background-color: #fff;
+    color: #247ba0
+}
+
+input[type=checkbox].Checkbox:disabled+label::before,
+input[type=checkbox].Checkbox.Invert:disabled+label::before {
+    border-color: #929699;
+    background-color: #929699
+}
+
+input[type=checkbox].Checkbox:disabled+label:hover::before,
+input[type=checkbox].Checkbox.Invert:disabled+label:hover::before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #929699
+}
+
+input[type=checkbox].Checkbox:disabled:checked+label::before,
+input[type=checkbox].Checkbox.Invert:disabled:checked+label::before {
+    color: #313233
+}
+
+.Form input[type=text],
+.Form input[type=number],
+.Form input[type=date],
+.Form input[type=email],
+.Form input[type=tel],
+.Form input[type=search],
+.Form input[type=password],
+.Form select,
+.Form textarea {
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .3rem .6rem;
+    width: 100%;
+    border: 1px solid #c4c9cc;
+    word-wrap: initial
+}
+
+.Form input[type=text]:focus,
+.Form input[type=number]:focus,
+.Form input[type=date]:focus,
+.Form input[type=email]:focus,
+.Form input[type=tel]:focus,
+.Form input[type=search]:focus,
+.Form input[type=password]:focus,
+.Form select:focus,
+.Form textarea:focus {
+    border-color: #929699
+}
+
+.Form [disabled=disabled] {
+    opacity: .5
+}
+
+.Form .Segment {
+    display: block;
+    margin-bottom: .5rem
+}
+
+.Form .Segment label {
+    display: block
+}
+
+.Form .Segment button {
+    width: 100%;
+    margin-bottom: .5rem
+}
+
+.Form .Segment .DateSelector input,
+.Form .Segment .DateSelector select {
+    width: calc(33.33333% - .33333rem);
+    margin-right: .5rem;
+    float: left
+}
+
+.Form .Segment .DateSelector input:last-of-type,
+.Form .Segment .DateSelector select:last-of-type {
+    margin-right: 0
+}
+
+.Form .Segment .Error {
+    color: #c75146;
+    font-size: .875rem
+}
+
+.Form .PrivacyStatement {
+    font-size: .8rem
+}
+
+.Form .errorText {
+    color: #c75146;
+    font-size: .875rem
+}
+
+.PopupVisible {
+    opacity: 1!important
+}
+
+.Popup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 125;
+    background: rgba(0, 0, 0, .75);
+    overflow-y: visible;
+    overflow-x: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    opacity: 0;
+    -webkit-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out
+}
+
+.Popup.Auth {
+    padding: 0
+}
+
+.Popup .CloseButton {
+    position: relative;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    overflow: hidden;
+    text-decoration: none
+}
+
+.Popup .CloseButton .CloseIcon:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #313233
+}
+
+.Popup .PopupContent {
+    display: block;
+    width: 30rem;
+    max-height: calc(100% - 3rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff
+}
+
+@media all and (max-width:480px) {
+    .Popup .PopupContent {
+        width: 100%;
+        height: 100%;
+        max-height: 100%
+    }
+}
+
+.PowerPopupWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 125;
+    background: rgba(49, 50, 51, .7);
+    overflow-y: visible;
+    overflow-x: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    cursor: pointer
+}
+
+@media all and (max-width:480px) {
+    .PowerPopupWrapper.Top {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding-top: 1rem
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .PowerPopupWrapper.Top {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding-top: 1rem
+    }
+}
+
+@media all and (max-width:480px) {
+    .PowerPopupWrapper.Bottom {
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        padding-bottom: 1rem
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .PowerPopupWrapper.Bottom {
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        padding-bottom: 1rem
+    }
+}
+
+.PowerPopupWrapper .PowerPopup {
+    position: relative;
+    display: block;
+    width: calc(100% - 1rem);
+    max-width: 30rem;
+    max-height: calc(100% - 1rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    cursor: default;
+    padding: .75rem;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 4rem
+}
+
+.PowerPopupWrapper .PowerPopup.Large {
+    max-width: 40rem
+}
+
+.PowerPopupWrapper .PowerPopup.NoPadding {
+    padding: 0
+}
+
+.PowerPopupWrapper .PowerPopup .CloseButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 25
+}
+
+.PowerPopupWrapper .PowerPopup .CloseButton .CloseIcon {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #c4c9cc
+}
+
+.PowerPopupWrapper .PowerPopup .CloseButton .CloseIcon:hover {
+    color: #929699
+}
+
+.PowerPopupWrapper .PowerPopup .PowerPopupContent {
+    clear: both
+}
+
+button.Textlink,
+input[type=button].Textlink,
+input[type=submit].Textlink,
+input[type=reset].Textlink,
+span.Clickable {
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #247ba0;
+    cursor: pointer
+}
+
+button.Textlink::-moz-focus-inner,
+input[type=button].Textlink::-moz-focus-inner,
+input[type=submit].Textlink::-moz-focus-inner,
+input[type=reset].Textlink::-moz-focus-inner,
+span.Clickable::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+button.Textlink:hover,
+input[type=button].Textlink:hover,
+input[type=submit].Textlink:hover,
+input[type=reset].Textlink:hover,
+span.Clickable:hover {
+    color: #1b5a75;
+    text-decoration: underline
+}
+
+table.Zebra thead tr {
+    background-color: #e8eced
+}
+
+table.Zebra tr:nth-child(even) {
+    background-color: #edf2f4
+}
+
+ul.Zebra li:nth-child(even),
+ol.Zebra li:nth-child(even) {
+    background-color: #edf2f4
+}
+
+body {
+    font-family: open sans, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: none;
+    color: #313233;
+    background-color: #fff
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    margin: 0 0 .25rem;
+    color: #313233;
+    font-weight: 400
+}
+
+body h1 {
+    font-size: 2.125rem;
+    line-height: 3rem
+}
+
+body h2 {
+    font-size: 1.6875rem;
+    line-height: 2.5rem
+}
+
+@media all and (max-width:480px) {
+    body h2 {
+        font-size: 1.1875rem;
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    body h2 {
+        font-size: 1.1875rem;
+        line-height: 1.5rem
+    }
+}
+
+body h3 {
+    font-size: 1.3125rem;
+    line-height: 2rem
+}
+
+body h4 {
+    font-size: 1.1875rem;
+    line-height: 1.5rem
+}
+
+body h5 {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    font-weight: 600
+}
+
+body h6 {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 600
+}
+
+body a {
+    color: #247ba0;
+    text-decoration: none
+}
+
+body a:hover {
+    color: #1b5a75;
+    text-decoration: underline
+}
+
+body a:visited {
+    color: #1b5a75
+}
+
+body ul {
+    list-style-type: square
+}
+
+body ul li {
+    margin-top: .5rem;
+    margin-bottom: .5rem
+}
+
+body ul li:first-child {
+    margin-top: 0
+}
+
+body ul li:last-child {
+    margin-bottom: 0
+}
+
+body ol li {
+    margin-top: .5rem;
+    margin-bottom: .5rem
+}
+
+body ol li:first-child {
+    margin-top: 0
+}
+
+body ol li:last-child {
+    margin-bottom: 0
+}
+
+body p {
+    margin: 0 0 .75rem
+}
+
+body abbr {
+    text-decoration: none;
+    cursor: help;
+    border-bottom: 1px dotted
+}
+
+@media all and (max-width:480px) {
+    body abbr {
+        border-bottom: 0
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    body abbr {
+        border-bottom: 0
+    }
+}
+
+body [data-clickable=clickable] {
+    cursor: pointer
+}
+
+body img[data-align=right] {
+    float: right;
+    margin: 1rem 0 1rem 1rem
+}
+
+body img[data-align=left] {
+    float: left;
+    margin: 1rem 1rem 1rem 0
+}
+
+body img[data-align=middle] {
+    margin: 1rem auto;
+    display: block
+}
+
+@media all and (max-width:480px) {
+    body img[data-align=left],
+    body img[data-align=right] {
+        margin: 1rem auto;
+        display: block
+    }
+}
+
+@media all and (max-width:480px) {
+    body .ModuleDivider .colblock,
+    body .ModuleDivider.colblock {
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+        margin-top: 0!important;
+        margin-bottom: 0!important
+    }
+    body .ModuleDivider .colblock div.Module:not(.EmptyModule),
+    body .ModuleDivider.colblock div.Module:not(.EmptyModule) {
+        padding: 1.5rem 0;
+        border-top: 1px solid #c4c9cc
+    }
+    body .ModuleDivider .colblock div.Module:not(.EmptyModule):after,
+    body .ModuleDivider.colblock div.Module:not(.EmptyModule):after {
+        content: "";
+        display: block;
+        clear: both
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    body .ModuleDivider .colblock,
+    body .ModuleDivider.colblock {
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+        margin-top: 0!important;
+        margin-bottom: 0!important
+    }
+    body .ModuleDivider .colblock div.Module:not(.EmptyModule),
+    body .ModuleDivider.colblock div.Module:not(.EmptyModule) {
+        padding: 1.5rem 0;
+        border-top: 1px solid #c4c9cc
+    }
+    body .ModuleDivider .colblock div.Module:not(.EmptyModule):after,
+    body .ModuleDivider.colblock div.Module:not(.EmptyModule):after {
+        content: "";
+        display: block;
+        clear: both
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    body .ModuleDivider .colblock div.Module:not(.EmptyModule),
+    body .ModuleDivider.colblock div.Module:not(.EmptyModule) {
+        margin: 0 0 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    body .ModuleDivider .colblock div.Module:not(.EmptyModule),
+    body .ModuleDivider.colblock div.Module:not(.EmptyModule) {
+        margin: 0 0 1.5rem
+    }
+}
+
+body .ModuleDivider:last-of-type .colblock:last-of-type div.Module:last-of-type:not(.EmptyModule) {
+    padding-bottom: 0
+}
+
+body .ModuleDivider:first-of-type .colblock:first-of-type>div.Module:first-of-type:not(.EmptyModule) {
+    padding-top: 0;
+    border-top: none
+}
+
+body .ModuleDivider.colblock div.Module:last-of-type:not(.EmptyModule) {
+    padding-bottom: 0;
+    border-bottom: none
+}
+
+body.is-notScrollable {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: auto
+}
+
+@media all and (max-width:480px) {
+    body.is-notScrollableMobile {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: auto
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    body.is-notScrollableMobile {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: auto
+    }
+}
+
+body .Hidden {
+    display: none!important
+}
+
+body .DesktopOnlyBlock {
+    display: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    body .DesktopOnlyBlock {
+        display: block
+    }
+}
+
+@media all and (min-width:1025px) {
+    body .DesktopOnlyBlock {
+        display: block
+    }
+}
+
+body .MobileOnlyBlock {
+    display: block!important
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    body .MobileOnlyBlock {
+        display: none!important
+    }
+}
+
+@media all and (min-width:1025px) {
+    body .MobileOnlyBlock {
+        display: none!important
+    }
+}
+
+body .Left {
+    float: left
+}
+
+body .Right {
+    float: right
+}
+
+#OffCanvasFilterMenu {
+    max-width: 480px;
+    background-color: #fff;
+    overflow: hidden
+}
+
+@media all and (min-width:481px) and (max-width:500px) {
+    #OffCanvasFilterMenu {
+        max-width: 500px
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #OffCanvasFilterMenu {
+        position: relative;
+        width: 320px;
+        z-index: 0;
+        background-color: transparent;
+        overflow: visible;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #OffCanvasFilterMenu {
+        position: relative;
+        width: 320px;
+        z-index: 0;
+        background-color: transparent;
+        overflow: visible;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+}
+
+#OffCanvasFilterMenu * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#OffCanvasFilterMenu #RefineWrapper {
+    padding-bottom: 70px;
+    width: 100%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #OffCanvasFilterMenu #RefineWrapper {
+        padding-bottom: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #OffCanvasFilterMenu #RefineWrapper {
+        padding-bottom: 0
+    }
+}
+
+#OffCanvasFilterMenu #RefineWrapper .FilterWrapper .Module:nth-last-child(2) .RefineModule:not(.is-collapsed) {
+    padding-bottom: 1rem
+}
+
+body {
+    background-color: #e8eced
+}
+
+@media all and (max-width:480px) {
+    body {
+        background-color: #fff
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    body {
+        background-color: #fff
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    body .WhiteBackgroundPane {
+        background-color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    body .WhiteBackgroundPane {
+        background-color: #fff
+    }
+}
+
+body #StudyHeaderContainer .col2-left {
+    background-color: #fff
+}
+
+iframe[name=google_conversion_frame] {
+    display: none
+}
+
+.RefineModule {
+    position: relative;
+    padding: 0 1rem 0 2.1rem;
+    background-color: #fff
+}
+
+.RefineModule.is-collapsed.has-selection h2::after {
+    content: '\00B7';
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: .6rem;
+    line-height: 56px;
+    font-size: 30px
+}
+
+.RefineModule.is-collapsed h2::before {
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+    margin-bottom: 1px
+}
+
+.RefineModule.is-collapsed .RefineContent {
+    display: none
+}
+
+.RefineModule h2 {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #fff;
+    color: #f95c39;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .RefineModule h2:hover {
+        color: #cc4c2f
+    }
+    .RefineModule h2:hover::before {
+        border-color: #cc4c2f
+    }
+}
+
+@media all and (min-width:1025px) {
+    .RefineModule h2:hover {
+        color: #cc4c2f
+    }
+    .RefineModule h2:hover::before {
+        border-color: #cc4c2f
+    }
+}
+
+.RefineModule h2::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 10px 3px -1.2rem;
+    border: 1px solid #f95c39;
+    border-left: 0;
+    border-top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.RefineModule ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.RefineModule ul::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.RefineModule ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: .25rem 0;
+    float: left;
+    width: 100%
+}
+
+.RefineModule ul li:first-child,
+.RefineModule ul li:last-child {
+    margin: .25rem 0
+}
+
+.RefineModule input[type=checkbox] {
+    margin: 4px .4rem 0 0;
+    width: 15px;
+    height: 15px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .RefineModule input[type=checkbox] {
+        width: 13px;
+        height: 13px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .RefineModule input[type=checkbox] {
+        width: 13px;
+        height: 13px
+    }
+}
+
+.RefineModule label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .RefineModule label:hover {
+        cursor: pointer
+    }
+}
+
+@media all and (min-width:1025px) {
+    .RefineModule label:hover {
+        cursor: pointer
+    }
+}
+
+.RefineModule .RefineContent {
+    font-size: .9375rem;
+    line-height: 1.5rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .RefineModule .RefineContent {
+        font-size: .875rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .RefineModule .RefineContent {
+        font-size: .875rem
+    }
+}
+
+.RefineModule .FilterExplanation {
+    margin-left: .2rem;
+    font-size: 10px;
+    color: #929699
+}
+
+.RefineModule .Facet {
+    padding-left: .2rem;
+    font-size: .875rem;
+    color: #929699;
+    opacity: 1;
+    -webkit-transition: .5s opacity ease;
+    -o-transition: .5s opacity ease;
+    transition: .5s opacity ease
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .RefineModule .Facet {
+        font-size: .8rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .RefineModule .Facet {
+        font-size: .8rem
+    }
+}
+
+.RefineModule .Facet.is-faded-out {
+    opacity: 0
+}
+
+.RefineModule .Facet:empty {
+    padding-left: 0
+}
+
+#galactus {
+    background-color: #e8eced;
+    font-size: .875rem
+}
+
+#galactus #FlexGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 37px;
+    overflow: visible
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus #FlexGrid {
+        margin-top: 3rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus #FlexGrid {
+        margin-top: 3rem
+    }
+}
+
+#galactus #FiltersContainer {
+    position: relative;
+    -webkit-box-flex: inherit;
+    -ms-flex: inherit inherit inherit;
+    flex: inherit inherit inherit
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus #FiltersContainer {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
+        flex: 0 0 320px;
+        margin-top: 4.05rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus #FiltersContainer {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 320px;
+        flex: 0 0 320px;
+        margin-top: 4.05rem
+    }
+}
+
+#galactus #SearchDetailsContainer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow: visible;
+    min-width: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus #SearchDetailsContainer {
+        padding: 0 0 0 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus #SearchDetailsContainer {
+        padding: 0 0 0 1rem
+    }
+}
+
+#galactus #BreadcrumbContainer {
+    background-color: #fff;
+    border-top: 1px solid #c4c9cc;
+    border-bottom: 1px solid #c4c9cc
+}
+
+#galactus #ResultsPagination {
+    margin-top: 1rem
+}
+
+#galactus #AwardsEntryPoint {
+    margin-top: 2rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus #AwardsEntryPoint {
+        margin-top: 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus #AwardsEntryPoint {
+        margin-top: 1rem
+    }
+}
+
+#galactus .AfterFiltersBannerContainer {
+    width: 100%
+}
+
+#galactus .AfterFiltersBannerContainer .BannerPlaceHolder {
+    margin: auto;
+    max-width: 100%
+}
+
+#galactus .AfterFiltersBannerContainer .BannerPlaceHolder .Banner {
+    width: 100%
+}
+
+#galactus .AfterFiltersBannerContainer .BannerPlaceHolder .Banner .TrackingExternalLink {
+    max-width: 100%
+}
+
+#galactus .BannerPlaceHolder {
+    width: auto!important;
+    overflow: hidden!important
+}
+
+#galactus #ResultsSummary {
+    position: relative
+}
+
+#galactus .Tag {
+    float: left;
+    max-width: 100%;
+    height: 24px;
+    font-size: 14px;
+    padding: 1px .5rem 0;
+    margin: .25rem .5rem .25rem 0;
+    background: #f95c39;
+    color: #fff;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+#galactus .DeleteTagIcon {
+    position: relative;
+    padding: 0 0 0 .25rem;
+    top: 1px;
+    font-size: 12px
+}
+
+#galactus .SlideInContent {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    max-width: 480px;
+    height: calc(100% - 153px);
+    top: 153px;
+    padding-top: 1rem;
+    z-index: 75;
+    overflow-y: visible;
+    overflow-x: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .SlideInContent {
+        position: relative;
+        padding-top: 0;
+        height: auto;
+        top: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .SlideInContent {
+        position: relative;
+        padding-top: 0;
+        height: auto;
+        top: auto
+    }
+}
+
+@media all and (min-width:481px) and (max-width:500px) {
+    #galactus .SlideInContent {
+        max-width: 500px
+    }
+}
+
+#galactus .SlideInLeft {
+    left: -100vw;
+    -webkit-transition: .6s right ease, .6s left ease;
+    -o-transition: .6s right ease, .6s left ease;
+    transition: .6s right ease, .6s left ease
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .SlideInLeft {
+        left: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .SlideInLeft {
+        left: auto
+    }
+}
+
+#galactus .SlideInLeft.is-active {
+    left: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .SlideInLeft.is-active {
+        left: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .SlideInLeft.is-active {
+        left: auto
+    }
+}
+
+#galactus .SlideInRight {
+    right: -100vw;
+    -webkit-transition: .6s right ease, .6s left ease;
+    -o-transition: .6s right ease, .6s left ease;
+    transition: .6s right ease, .6s left ease
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .SlideInRight {
+        left: auto;
+        right: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .SlideInRight {
+        left: auto;
+        right: auto
+    }
+}
+
+#galactus .SlideInRight.is-active {
+    right: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .SlideInRight.is-active {
+        left: auto;
+        right: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .SlideInRight.is-active {
+        left: auto;
+        right: auto
+    }
+}
+
+#galactus .Overlay {
+    position: fixed;
+    height: calc(100vh - 153px);
+    width: 100vw;
+    top: 153px;
+    left: 0;
+    z-index: -1;
+    background: rgba(141, 172, 186, .75)
+}
+
+#galactus .Overlay.AnimationFadeInDisplayBlock {
+    -webkit-animation: 1s FadeInDisplayBlock ease forwards;
+    animation: 1s FadeInDisplayBlock ease forwards;
+    z-index: 50
+}
+
+@-webkit-keyframes FadeInDisplayBlock {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes FadeInDisplayBlock {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#galactus .Overlay.AnimationFadeOutDisplayBlock {
+    -webkit-animation: .6s FadeOutUnderTheFloor ease forwards;
+    animation: .6s FadeOutUnderTheFloor ease forwards;
+    z-index: 50
+}
+
+@-webkit-keyframes FadeOutUnderTheFloor {
+    0% {
+        opacity: 1
+    }
+    99% {
+        opacity: 0
+    }
+    100% {
+        z-index: -1
+    }
+}
+
+@keyframes FadeOutUnderTheFloor {
+    0% {
+        opacity: 1
+    }
+    99% {
+        opacity: 0
+    }
+    100% {
+        z-index: -1
+    }
+}
+
+#galactus .RefineButtonWrapper {
+    position: fixed;
+    bottom: 1rem;
+    left: -100vw;
+    height: 1.5rem;
+    width: calc(100% - 2rem);
+    max-width: 448px;
+    padding: 1rem;
+    z-index: 100;
+    -webkit-transition: .6s left ease;
+    -o-transition: .6s left ease;
+    transition: .6s left ease
+}
+
+#galactus .RefineButtonWrapper .SearchDriverButton {
+    color: #fff;
+    background-color: #f95c39
+}
+
+#galactus .RefineButtonWrapper.is-activeMobile {
+    left: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #galactus .RefineButtonWrapper.is-activeMobile {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #galactus .RefineButtonWrapper.is-activeMobile {
+        display: none
+    }
+}
+
+#galactus .RefineButtonWrapper .CloseOffCanvasFilterMenu {
+    width: 100%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .HeaderLoggedIn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media all and (min-width:1025px) {
+    .HeaderLoggedIn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+#HeaderLogin {
+    padding: 0;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderLogin {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 3.75rem;
+        text-align: center
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderLogin {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 3.75rem;
+        text-align: center
+    }
+}
+
+#HeaderLogin .HeaderWishlistContainer {
+    height: 100%;
+    padding-right: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .875rem;
+    color: #f95c39;
+    text-decoration: none;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderLogin .HeaderWishlistContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-width: 3.5rem;
+        padding: 0
+    }
+    #HeaderLogin .HeaderWishlistContainer .WishlistIcon::before {
+        font-size: 1.55rem;
+        line-height: 1.3rem
+    }
+    #HeaderLogin .HeaderWishlistContainer .HeaderWishlistText {
+        font-size: .6875rem;
+        line-height: 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderLogin .HeaderWishlistContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-width: 3.5rem;
+        padding: 0
+    }
+    #HeaderLogin .HeaderWishlistContainer .WishlistIcon::before {
+        font-size: 1.55rem;
+        line-height: 1.3rem
+    }
+    #HeaderLogin .HeaderWishlistContainer .HeaderWishlistText {
+        font-size: .6875rem;
+        line-height: 1rem
+    }
+}
+
+#HeaderLogin .HeaderWishlistContainer:hover {
+    color: #cc4c2f
+}
+
+#HeaderLogin .HeaderWishlistContainer .WishlistIcon {
+    position: relative;
+    margin: 0 .5rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderLogin .HeaderWishlistContainer .WishlistIcon {
+        display: inline-block;
+        margin-top: .25rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderLogin .HeaderWishlistContainer .WishlistIcon {
+        display: inline-block;
+        margin-top: .25rem
+    }
+}
+
+#HeaderLogin .HeaderWishlistContainer .WishlistIcon::before {
+    font-size: 1.55rem;
+    vertical-align: top
+}
+
+#HeaderLogin .AccountClickable {
+    background-color: #fff;
+    color: #247ba0;
+    font-size: .875rem;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderLogin .AccountClickable {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 3.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderLogin .AccountClickable {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 3.5rem
+    }
+}
+
+#HeaderLogin #LoginButton,
+#HeaderLogin #LoggedInToggle {
+    font-size: .6875rem;
+    line-height: 1rem;
+    height: auto;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    max-width: 10rem;
+    cursor: pointer
+}
+
+#HeaderLogin #LoginButton:hover,
+#HeaderLogin #LoggedInToggle:hover {
+    text-decoration: none;
+    color: #1b5a75
+}
+
+#HeaderLogin #LoggedInToggle {
+    min-width: 3.5rem;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    background: #fff
+}
+
+#HeaderLogin .LoggedInUserText {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block
+}
+
+#HeaderLogin .UserIcon {
+    display: none;
+    margin: 0 .5rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderLogin .UserIcon {
+        display: inline-block;
+        margin-top: .25rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderLogin .UserIcon {
+        display: inline-block;
+        margin-top: .25rem
+    }
+}
+
+#HeaderLogin .UserIcon:before {
+    color: #247ba0;
+    font-size: 1.3rem;
+    vertical-align: top
+}
+
+#HeaderLogin .UserIcon:hover::before {
+    color: #1b5a75
+}
+
+.AccountDropDown {
+    padding: 0;
+    color: #247ba0;
+    background-color: #fff;
+    -webkit-transition: top .5s;
+    -o-transition: top .5s;
+    transition: top .5s
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .AccountDropDown {
+        position: absolute;
+        top: -160%;
+        right: -.75rem;
+        width: 10rem;
+        z-index: -2;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3)
+    }
+}
+
+@media all and (min-width:1025px) {
+    .AccountDropDown {
+        position: absolute;
+        top: -160%;
+        right: -.75rem;
+        width: 10rem;
+        z-index: -2;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3)
+    }
+}
+
+.AccountDropDown.Selected {
+    top: 100%
+}
+
+.AccountDropDown ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: center
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .AccountDropDown ul {
+        text-align: left
+    }
+}
+
+@media all and (min-width:1025px) {
+    .AccountDropDown ul {
+        text-align: left
+    }
+}
+
+.AccountDropDown li {
+    margin: 0;
+    padding: .5rem 1rem;
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+    border: 1px solid #f95c39;
+    font-size: .875rem
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .AccountDropDown li {
+        margin-right: 1.5rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .AccountDropDown li {
+        border: 0;
+        display: block
+    }
+}
+
+@media all and (min-width:1025px) {
+    .AccountDropDown li {
+        border: 0;
+        display: block
+    }
+}
+
+.AccountDropDown li:hover {
+    background-color: #edf2f4
+}
+
+.AccountDropDown li a {
+    color: #f95c39;
+    text-decoration: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .AccountDropDown li a {
+        color: #247ba0
+    }
+}
+
+@media all and (min-width:1025px) {
+    .AccountDropDown li a {
+        color: #247ba0
+    }
+}
+
+.AccountDropDown li a:hover {
+    text-decoration: none;
+    color: #cc4c2f
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .AccountDropDown li a:hover {
+        color: #247ba0
+    }
+}
+
+@media all and (min-width:1025px) {
+    .AccountDropDown li a:hover {
+        color: #247ba0
+    }
+}
+
+#NavBar #SearchHeaderButtons {
+    background: #fff;
+    border-top: 1px solid #e8eced;
+    -webkit-box-shadow: 0 5px 4px -4px rgba(49, 50, 51, .3);
+    box-shadow: 0 5px 4px -4px rgba(49, 50, 51, .3);
+    z-index: 99;
+    margin-top: -35px;
+    -webkit-transition: margin-top .3s cubic-bezier(.3, .6, 0, 1);
+    -o-transition: margin-top .3s cubic-bezier(.3, .6, 0, 1);
+    transition: margin-top .3s cubic-bezier(.3, .6, 0, 1)
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #NavBar #SearchHeaderButtons {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #NavBar #SearchHeaderButtons {
+        display: none
+    }
+}
+
+#NavBar #SearchHeaderButtons.HeaderSearchIsVisible {
+    margin-top: 57px
+}
+
+#NavBar #SearchHeaderButtons>div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    text-align: center
+}
+
+#NavBar #SearchHeaderButtons .SearchHeaderButton {
+    padding: .5rem 0;
+    width: 100%;
+    color: #929699;
+    text-decoration: none
+}
+
+#NavBar #SearchHeaderButtons .SearchHeaderButton.is-active {
+    text-decoration: none
+}
+
+#NavBar #SearchHeaderButtons .RefinesHeaderButton.is-active {
+    color: #f95c39
+}
+
+#NavBar #SearchHeaderButtons .SortingHeaderButton.is-active {
+    color: #247ba0
+}
+
+#LoadingBar {
+    width: 100%;
+    height: 2px;
+    display: block
+}
+
+#LoadingBar .LoadingBarBody {
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #f95c39
+}
+
+#LoadingBar .LoadingBarBody.finished {
+    width: 100%;
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut
+}
+
+#LoadingBar .AnimateLoadingBar {
+    -webkit-animation-duration: 300s;
+    animation-duration: 300s;
+    -webkit-animation-name: loadingAnimation;
+    animation-name: loadingAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+@-webkit-keyframes loadingAnimation {
+    0% {
+        width: 0%
+    }
+    0.4% {
+        width: 10%
+    }
+    0.8% {
+        width: 15%
+    }
+    1.2% {
+        width: 20%
+    }
+    1.6% {
+        width: 30%
+    }
+    2.0% {
+        width: 40%
+    }
+    2.4% {
+        width: 55%
+    }
+    2.8% {
+        width: 60%
+    }
+    3.2% {
+        width: 65%
+    }
+    3.6% {
+        width: 85%
+    }
+    4% {
+        width: 90%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes loadingAnimation {
+    0% {
+        width: 0%
+    }
+    0.4% {
+        width: 10%
+    }
+    0.8% {
+        width: 15%
+    }
+    1.2% {
+        width: 20%
+    }
+    1.6% {
+        width: 30%
+    }
+    2.0% {
+        width: 40%
+    }
+    2.4% {
+        width: 55%
+    }
+    2.8% {
+        width: 60%
+    }
+    3.2% {
+        width: 65%
+    }
+    3.6% {
+        width: 85%
+    }
+    4% {
+        width: 90%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    33% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    33% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .ResultsNum {
+        margin-top: 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .ResultsNum {
+        margin-top: 1rem
+    }
+}
+
+.Paging ul {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin-top: .3rem;
+    width: 100%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul {
+        display: block;
+        width: auto
+    }
+    .Paging ul:before,
+    .Paging ul:after {
+        content: "";
+        display: block
+    }
+    .Paging ul:after {
+        clear: both
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul {
+        display: block;
+        width: auto
+    }
+    .Paging ul:before,
+    .Paging ul:after {
+        content: "";
+        display: block
+    }
+    .Paging ul:after {
+        clear: both
+    }
+}
+
+.Paging ul li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 102px;
+    flex: 0 0 102px;
+    margin: .2rem;
+    color: #dce1e5;
+    line-height: 44px;
+    text-align: center;
+    list-style: none
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Paging ul li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 120px;
+        flex: 0 0 120px
+    }
+}
+
+.Paging ul li:first-of-type {
+    margin-left: 0;
+    margin-top: .2rem
+}
+
+.Paging ul li:nth-of-type(3) {
+    margin-left: 0
+}
+
+.Paging ul li:last-of-type {
+    margin-right: 0;
+    margin-bottom: .2rem
+}
+
+.Paging ul li.Spacer {
+    padding: 0;
+    width: 20px;
+    height: 44px;
+    color: #313233
+}
+
+.Paging ul li.PageCount {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    font-size: 1.2rem
+}
+
+.Paging ul li.PageCount .CurrentPageText {
+    color: #f95c39
+}
+
+.Paging ul button {
+    width: 100%;
+    padding: 0;
+    height: 44px;
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #dce1e5;
+    border-radius: 3px;
+    font-size: inherit;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul button {
+        width: 44px;
+        color: #313233
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul button {
+        width: 44px;
+        color: #313233
+    }
+}
+
+.Paging ul button .ArrowIcon {
+    font-size: .7rem
+}
+
+.Paging ul button:not(:disabled):not(.CurrentPage):hover {
+    background-color: #cc4c2f
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul button:not(: disabled):not(.CurrentPage):hover {
+        border: 1px solid #f95c39;
+        background-color: #fff;
+        color: #f95c39
+    }
+    .Paging ul button:not(:disabled):not(.CurrentPage):hover:after {
+        color: #f95c39
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul button:not(: disabled):not(.CurrentPage):hover {
+        border: 1px solid #f95c39;
+        background-color: #fff;
+        color: #f95c39
+    }
+    .Paging ul button:not(:disabled):not(.CurrentPage):hover:after {
+        color: #f95c39
+    }
+}
+
+.Paging ul button.CurrentPage {
+    background-color: #f95c39;
+    border-color: #f95c39;
+    color: #fff
+}
+
+.Paging ul button.FourDigits {
+    width: 55px
+}
+
+.Paging ul button.PrevPage {
+    border-radius: 3px 0 0 3px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul button.PrevPage {
+        border-radius: 3px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul button.PrevPage {
+        border-radius: 3px
+    }
+}
+
+.Paging ul button.NextPage {
+    border-radius: 0 3px 3px 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul button.NextPage {
+        border-radius: 3px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul button.NextPage {
+        border-radius: 3px
+    }
+}
+
+.Paging ul button.TextNav {
+    background-color: #f95c39;
+    border-color: #f95c39;
+    color: #fff
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul button.TextNav {
+        width: 90px;
+        background-color: #fff;
+        border-color: #dce1e5;
+        color: #313233
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul button.TextNav {
+        width: 90px;
+        background-color: #fff;
+        border-color: #dce1e5;
+        color: #313233
+    }
+}
+
+.Paging ul button:disabled {
+    background-color: #dce1e5;
+    border-color: #dce1e5;
+    cursor: auto
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Paging ul button:disabled {
+        background-color: #fff;
+        color: #dce1e5
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Paging ul button:disabled {
+        background-color: #fff;
+        color: #dce1e5
+    }
+}
+
+#EntryPointPersonalUpdates {
+    background-color: #247ba0;
+    color: #fff;
+    position: relative;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#EntryPointPersonalUpdates:before,
+#EntryPointPersonalUpdates:after {
+    content: "";
+    display: block
+}
+
+#EntryPointPersonalUpdates:after {
+    clear: both
+}
+
+@media all and (max-width:480px) {
+    #EntryPointPersonalUpdates {
+        display: block;
+        text-align: center
+    }
+}
+
+#EntryPointPersonalUpdates .EntryPointPersonalUpdatesText {
+    width: 70%;
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    margin-right: 1rem
+}
+
+@media all and (max-width:480px) {
+    #EntryPointPersonalUpdates .EntryPointPersonalUpdatesText {
+        padding: 0 0 1rem;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+#EntryPointPersonalUpdates .EntryPointPersonalUpdatesLink {
+    display: block;
+    padding: .5rem 1rem;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #247ba0;
+    text-align: center;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear
+}
+
+#EntryPointPersonalUpdates .EntryPointPersonalUpdatesLink:hover {
+    background: #edf2f4;
+    text-decoration: none
+}
+
+#TagInputWrapper {
+    position: relative;
+    background-color: #fff
+}
+
+#TagInputWrapper.is-clicked .SearchButton {
+    color: #f95c39
+}
+
+#TagInputWrapper.is-clicked .TagInput {
+    caret-color: #f95c39
+}
+
+#TagInputWrapper .TagInput {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    padding: .5rem;
+    color: #f95c39;
+    border: 1px solid #e8eced
+}
+
+#TagInputWrapper .SearchButton {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    background: inherit;
+    border: 0;
+    color: #dce1e5
+}
+
+#TagInputWrapper .TagContainer {
+    position: absolute;
+    top: .25rem;
+    left: .25rem;
+    right: 4rem
+}
+
+#TagInputWrapper .TagContainer .Tag {
+    margin: .25rem;
+    padding: 0 .5rem
+}
+
+#galactus.narrow #SuggestionWrapper:not(.Hidden) {
+    margin: .5rem 0 1.5rem
+}
+
+#galactus.narrow #SuggestionWrapper:not(.Hidden):before,
+#galactus.narrow #SuggestionWrapper:not(.Hidden):after {
+    content: "";
+    display: block
+}
+
+#galactus.narrow #SuggestionWrapper:not(.Hidden):after {
+    clear: both
+}
+
+#galactus.narrow #SuggestionWrapper:not(.Hidden).is-empty {
+    margin: 0 0 2rem
+}
+
+#galactus.narrow #SuggestionWrapper:not(.Hidden) .Suggestion {
+    margin: 0 .5rem .5rem 0;
+    background-color: #fdf2f2;
+    color: #f95c39
+}
+
+#SearchSummary {
+    margin: 1.5rem 0 0;
+    line-height: 1;
+    min-height: 49px
+}
+
+#SearchSummary .Total {
+    display: block;
+    margin: 0;
+    padding: .1rem 0 .4rem;
+    border-bottom: 1px solid #c4c9cc;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 700
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SearchSummary .Total {
+        font-weight: 400
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SearchSummary .Total {
+        font-weight: 400
+    }
+}
+
+#SearchSummary .ButtonWrapper {
+    display: inline-block;
+    margin: .2rem 0 0;
+    padding: 0
+}
+
+#SearchSummary .ButtonWrapper .ListItem {
+    display: inline-block;
+    margin: .3575rem .5rem .3575rem 0;
+    float: left
+}
+
+#SearchSummary .ButtonWrapper .ListItem:first-of-type {
+    margin: .5rem .3rem .5rem 0
+}
+
+#SearchSummary .ParameterButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+#SearchSummary .ParameterButton .DeleteIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#SearchSummary .ParameterButton,
+#SearchSummary .DeleteAllButton {
+    background-color: #fbfbfb;
+    border: 1px solid #c4c9cc;
+    border-radius: 18px;
+    cursor: pointer;
+    position: relative;
+    padding: .2rem .6rem .3rem;
+    color: #313233;
+    font-size: inherit
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SearchSummary .ParameterButton.ParameterButton:hover,
+    #SearchSummary .DeleteAllButton.ParameterButton:hover {
+        color: #313233;
+        border-color: #313233
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SearchSummary .ParameterButton.ParameterButton:hover,
+    #SearchSummary .DeleteAllButton.ParameterButton:hover {
+        color: #313233;
+        border-color: #313233
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SearchSummary .ParameterButton.ParameterButton:hover .Value,
+    #SearchSummary .DeleteAllButton.ParameterButton:hover .Value {
+        text-decoration: line-through
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SearchSummary .ParameterButton.ParameterButton:hover .Value,
+    #SearchSummary .DeleteAllButton.ParameterButton:hover .Value {
+        text-decoration: line-through
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SearchSummary .ParameterButton.ParameterButton:hover .DeleteIcon,
+    #SearchSummary .DeleteAllButton.ParameterButton:hover .DeleteIcon {
+        text-decoration: none;
+        font-weight: 700
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SearchSummary .ParameterButton.ParameterButton:hover .DeleteIcon,
+    #SearchSummary .DeleteAllButton.ParameterButton:hover .DeleteIcon {
+        text-decoration: none;
+        font-weight: 700
+    }
+}
+
+#SearchSummary .ParameterButton .Value,
+#SearchSummary .DeleteAllButton .Value {
+    float: left;
+    display: block;
+    line-height: 1.4
+}
+
+#SearchSummary .ParameterButton .DeleteIcon,
+#SearchSummary .DeleteAllButton .DeleteIcon {
+    float: left;
+    font-size: .7rem;
+    line-height: 1.3rem;
+    margin-left: .2rem
+}
+
+#SearchSummary .DeleteAllButton {
+    padding-left: 0;
+    border: 1px solid transparent;
+    color: #247ba0;
+    background: 0 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SearchSummary .DeleteAllButton:hover {
+        text-decoration: underline
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SearchSummary .DeleteAllButton:hover {
+        text-decoration: underline
+    }
+}
+
+#SearchSummary.no-delete .DeleteAll,
+#SearchSummary.no-params .ButtonWrapper {
+    display: none
+}
+
+#SearchSummary .TotalForTagExperiment,
+#SearchSummary .FiltersTitleForExperiment {
+    display: none
+}
+
+#SearchSummary.Tags {
+    margin: 0;
+    min-height: 0
+}
+
+#SearchSummary.Tags.no-params .FiltersTitleForExperiment {
+    display: none
+}
+
+#SearchSummary.Tags .ButtonWrapper {
+    margin: 0 0 2rem
+}
+
+#SearchSummary.Tags .ButtonWrapper:before,
+#SearchSummary.Tags .ButtonWrapper:after {
+    content: "";
+    display: block
+}
+
+#SearchSummary.Tags .ButtonWrapper:after {
+    clear: both
+}
+
+#SearchSummary.Tags .ListItem {
+    display: block;
+    margin: 0
+}
+
+#SearchSummary.Tags .ListItem:before,
+#SearchSummary.Tags .ListItem:after {
+    content: "";
+    display: block
+}
+
+#SearchSummary.Tags .ListItem:after {
+    clear: both
+}
+
+#SearchSummary.Tags .ListItem .ParameterButton,
+#SearchSummary.Tags .ListItem .DeleteAllButton {
+    float: left;
+    height: 24px;
+    font-size: 14px;
+    padding: 1px .5rem 0;
+    margin: .5rem .5rem 0 0;
+    background-color: #eef7f1;
+    color: #44af69;
+    border: 0;
+    border-radius: 0
+}
+
+#SearchSummary.Tags .Total {
+    display: block;
+    padding: 0 0 .75rem;
+    color: #929699;
+    font-size: .8rem;
+    font-weight: 400;
+    border: 0;
+    line-height: 1
+}
+
+#SearchSummary.Tags .FiltersTitleForExperiment {
+    padding: 0 0 .25rem
+}
+
+#SortingContainerDesktop {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SortingContainerDesktop {
+        display: block
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SortingContainerDesktop {
+        display: block
+    }
+}
+
+#SortingContainerDesktop .SortingOption {
+    float: left;
+    padding: .2rem .5rem;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    color: #929699
+}
+
+#SortingContainerDesktop .SortingOption:last-of-type {
+    padding-right: 0
+}
+
+#SortingContainerDesktop .SortingOption.is-active {
+    padding: .2rem 0;
+    margin: 0 .5rem;
+    color: #247ba0;
+    border-bottom: 5px solid #247ba0
+}
+
+#SortingContainerDesktop .SortingOption.is-active:last-of-type {
+    margin-right: 0
+}
+
+#SortingContainerDesktop .SortingOption:hover {
+    text-decoration: none;
+    cursor: pointer
+}
+
+.WaitBlocker {
+    opacity: .25;
+    pointer-events: none;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+#NoResults {
+    padding: 2rem 0 2rem 1rem;
+    text-align: center
+}
+
+#NoResults .Ghost {
+    font-size: 5rem;
+    margin: 3rem 0 1rem;
+    display: block
+}
+
+#NoResults .NoResultsHeader {
+    margin-bottom: 1rem;
+    font-size: 1.6875rem;
+    line-height: 2.5rem;
+    font-weight: 600
+}
+
+#NoResults .NoResultsMessage,
+#NoResults .NewSearchLink {
+    font-size: .9375rem;
+    line-height: 1.5rem
+}
+
+#NoResults .NoResultsMessage {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#NoResults .NewSearchLink {
+    font-weight: 600
+}
+
+#StudySearchResults {
+    position: relative;
+    margin: 0 -1rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults {
+        margin: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults {
+        margin: 0
+    }
+}
+
+#StudySearchResults .APBanner {
+    background-color: #fef7e9;
+    border-top: 1px solid #fcab10;
+    border-bottom: 1px solid #fcab10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: unset;
+    flex-direction: unset
+}
+
+#StudySearchResults .APBanner .LogoContainer {
+    margin-bottom: 0;
+    width: 32px;
+    min-width: 32px;
+    padding-right: 1rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults .APBanner .LogoContainer {
+        min-width: 64px
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .LogoContainer {
+        width: 112px;
+        padding-right: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults .APBanner .LogoContainer {
+        width: 112px;
+        padding-right: 0
+    }
+}
+
+#StudySearchResults .APBanner .APLogoImg {
+    height: 48px
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .APLogoImg {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .APLogoImg {
+        height: 96px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults .APBanner .APLogoImg {
+        height: 96px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults .APBanner .APLogoImg {
+        height: 96px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+#StudySearchResults .APBanner .InformationContainer {
+    padding-right: 3rem
+}
+
+#StudySearchResults .APBanner .TextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .TextContainer {
+        width: 100%
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults .APBanner .TextContainer {
+        width: 100%
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults .APBanner .TextContainer {
+        width: calc(100% - 150px)
+    }
+}
+
+#StudySearchResults .APBanner .Description {
+    font-size: .6875rem;
+    line-height: 1rem;
+    display: block;
+    height: auto;
+    margin: 0
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .Description {
+        font-size: .9375rem;
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults .APBanner .Description {
+        font-size: .9375rem;
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults .APBanner .Description {
+        font-size: .9375rem;
+        line-height: 1.5rem
+    }
+}
+
+#StudySearchResults .APBanner .Description:first-child {
+    width: 80%;
+    color: #313233;
+    font-weight: 400;
+    margin: 0
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .Description:first-child {
+        width: 100%
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults .APBanner .Description:first-child {
+        width: 100%
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults .APBanner .Description:first-child {
+        width: 100%
+    }
+}
+
+#StudySearchResults .APBanner .Description:nth-child(2) {
+    cursor: pointer;
+    padding-bottom: 3px
+}
+
+#StudySearchResults .APBanner .CloseAPBanner {
+    position: absolute;
+    padding: 1rem 1rem .5rem;
+    top: 0;
+    right: 0;
+    cursor: pointer
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #StudySearchResults .APBanner .CloseAPBanner {
+        padding: 1.5rem 1.8rem .5rem 1rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #StudySearchResults .APBanner .CloseAPBanner {
+        padding: 1.5rem 1.8rem .5rem 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #StudySearchResults .APBanner .CloseAPBanner {
+        padding: 1.5rem 1.8rem .5rem 1rem
+    }
+}
+
+#StudySearchResults .APBanner .Cross {
+    color: #c4c9cc;
+    font-size: 24px
+}
+
+#StudySearchResults .APBanner .Cross:hover {
+    color: #929699
+}
+
+.Result,
+.APBanner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 1px;
+    background: #fff;
+    font-size: .8125rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result,
+    .APBanner {
+        font-size: .9375rem;
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result,
+    .APBanner {
+        font-size: .9375rem;
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result,
+    .APBanner {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding: 1.5rem 2rem 1.5rem 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result,
+    .APBanner {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding: 1.5rem 2rem 1.5rem 1rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result,
+    .APBanner {
+        padding: 1.5rem
+    }
+}
+
+.Result:hover,
+.Result:active,
+.Result:visited,
+.APBanner:hover,
+.APBanner:active,
+.APBanner:visited {
+    text-decoration: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result:hover .StudyTitle,
+    .APBanner:hover .StudyTitle {
+        color: #cc4c2f
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result:hover .StudyTitle,
+    .APBanner:hover .StudyTitle {
+        color: #cc4c2f
+    }
+}
+
+.Result .LogoContainer,
+.APBanner .LogoContainer {
+    width: 112px;
+    max-height: 112px;
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result .LogoContainer,
+    .APBanner .LogoContainer {
+        padding: 8px;
+        margin-right: 8px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .LogoContainer,
+    .APBanner .LogoContainer {
+        padding: 8px;
+        margin-right: 8px
+    }
+}
+
+@media all and (max-width:480px) {
+    .Result .LogoContainer,
+    .APBanner .LogoContainer {
+        margin-bottom: 8px
+    }
+    .Result .LogoContainer:empty,
+    .APBanner .LogoContainer:empty {
+        display: none
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .LogoContainer,
+    .APBanner .LogoContainer {
+        margin-bottom: 8px
+    }
+    .Result .LogoContainer:empty,
+    .APBanner .LogoContainer:empty {
+        display: none
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result .LogoContainer,
+    .APBanner .LogoContainer {
+        margin-top: -5px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .LogoContainer,
+    .APBanner .LogoContainer {
+        margin-top: -5px
+    }
+}
+
+.Result .LogoContainer img,
+.APBanner .LogoContainer img {
+    max-height: 100%
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result .LogoContainer img,
+    .APBanner .LogoContainer img {
+        margin: 0 auto;
+        display: block
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .LogoContainer img,
+    .APBanner .LogoContainer img {
+        margin: 0 auto;
+        display: block
+    }
+}
+
+.Result .InformationContainer,
+.APBanner .InformationContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result .InformationContainer,
+    .APBanner .InformationContainer {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .InformationContainer,
+    .APBanner .InformationContainer {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%
+    }
+}
+
+.Result .InformationContainer .CardHeader,
+.APBanner .InformationContainer .CardHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: calc(100% - 32px)
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result .InformationContainer .CardHeader,
+    .APBanner .InformationContainer .CardHeader {
+        width: calc(100% - 29px)
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .InformationContainer .CardHeader,
+    .APBanner .InformationContainer .CardHeader {
+        width: calc(100% - 45px)
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .InformationContainer .CardHeader,
+    .APBanner .InformationContainer .CardHeader {
+        width: calc(100% - 37px)
+    }
+}
+
+.Result .InformationContainer .CardHeader .StudyTitle,
+.APBanner .InformationContainer .CardHeader .StudyTitle {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%
+}
+
+.Result .InformationContainer .InformationLeft,
+.APBanner .InformationContainer .InformationLeft {
+    width: calc(100% - 110px);
+    min-width: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .InformationContainer .InformationLeft,
+    .APBanner .InformationContainer .InformationLeft {
+        width: calc(100% - 150px)
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .InformationContainer .InformationLeft,
+    .APBanner .InformationContainer .InformationLeft {
+        width: calc(100% - 150px)
+    }
+}
+
+.Result .InformationContainer .InformationRight,
+.APBanner .InformationContainer .InformationRight {
+    width: 110px;
+    text-align: right
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .InformationContainer .InformationRight,
+    .APBanner .InformationContainer .InformationRight {
+        width: 150px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .InformationContainer .InformationRight,
+    .APBanner .InformationContainer .InformationRight {
+        width: 150px
+    }
+}
+
+.Result .InformationContainer .ExtraFacts,
+.APBanner .InformationContainer .ExtraFacts {
+    width: 100%;
+    padding-right: 1rem
+}
+
+.Result .Fact,
+.APBanner .Fact {
+    line-height: 1.2rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Fact,
+    .APBanner .Fact {
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Fact,
+    .APBanner .Fact {
+        line-height: 1.5rem
+    }
+}
+
+.Result .Fact.KeyFact,
+.APBanner .Fact.KeyFact {
+    display: block;
+    color: #313233;
+    font-weight: 600
+}
+
+.Result .Fact.NotAvailable,
+.APBanner .Fact.NotAvailable {
+    height: 1.2rem;
+    display: block
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Fact.NotAvailable,
+    .APBanner .Fact.NotAvailable {
+        height: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Fact.NotAvailable,
+    .APBanner .Fact.NotAvailable {
+        height: 1.5rem
+    }
+}
+
+.Result .Favouriting,
+.APBanner .Favouriting {
+    position: absolute;
+    margin: 0;
+    padding: 1rem 1rem .5rem;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: 0 0
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .Result .Favouriting,
+    .APBanner .Favouriting {
+        padding: 1.5rem 1.8rem .5rem 1rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Favouriting,
+    .APBanner .Favouriting {
+        padding: 1.5rem 1.8rem .5rem 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Favouriting,
+    .APBanner .Favouriting {
+        padding: 1.5rem 1.8rem .5rem 1rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Favouriting:hover,
+    .APBanner .Favouriting:hover {
+        cursor: pointer
+    }
+    .Result .Favouriting:hover .HeartIcon,
+    .APBanner .Favouriting:hover .HeartIcon {
+        color: #cc4c2f
+    }
+    .Result .Favouriting:hover .HeartIcon:before,
+    .APBanner .Favouriting:hover .HeartIcon:before {
+        display: inline-block;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: -webkit-transform .15s;
+        transition: -webkit-transform .15s;
+        -o-transition: transform .15s;
+        transition: transform .15s;
+        transition: transform .15s, -webkit-transform .15s
+    }
+    .Result .Favouriting~.StudyTitle,
+    .APBanner .Favouriting~.StudyTitle {
+        color: #f95c39
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Favouriting:hover,
+    .APBanner .Favouriting:hover {
+        cursor: pointer
+    }
+    .Result .Favouriting:hover .HeartIcon,
+    .APBanner .Favouriting:hover .HeartIcon {
+        color: #cc4c2f
+    }
+    .Result .Favouriting:hover .HeartIcon:before,
+    .APBanner .Favouriting:hover .HeartIcon:before {
+        display: inline-block;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: -webkit-transform .15s;
+        transition: -webkit-transform .15s;
+        -o-transition: transform .15s;
+        transition: transform .15s;
+        transition: transform .15s, -webkit-transform .15s
+    }
+    .Result .Favouriting~.StudyTitle,
+    .APBanner .Favouriting~.StudyTitle {
+        color: #f95c39
+    }
+}
+
+.Result .Favouriting .HeartIcon,
+.APBanner .Favouriting .HeartIcon {
+    font-size: 16px;
+    color: #f95c39
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Favouriting .HeartIcon,
+    .APBanner .Favouriting .HeartIcon {
+        font-size: 24px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Favouriting .HeartIcon,
+    .APBanner .Favouriting .HeartIcon {
+        font-size: 24px
+    }
+}
+
+.Result .StudyTitle,
+.APBanner .StudyTitle {
+    display: block;
+    margin-bottom: .5rem;
+    max-height: 2.4rem;
+    overflow: hidden;
+    color: #f95c39;
+    font-weight: 400;
+    line-height: 1.2rem;
+    font-size: .9375rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .StudyTitle,
+    .APBanner .StudyTitle {
+        height: auto;
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+        max-height: 3rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .StudyTitle,
+    .APBanner .StudyTitle {
+        height: auto;
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+        max-height: 3rem
+    }
+}
+
+.Result .Description,
+.APBanner .Description {
+    display: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Description,
+    .APBanner .Description {
+        display: block;
+        margin: .5rem 0 0;
+        height: 2rem;
+        max-width: 460px;
+        overflow: hidden;
+        color: #929699;
+        font-size: .8125rem;
+        line-height: 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Description,
+    .APBanner .Description {
+        display: block;
+        margin: .5rem 0 0;
+        height: 2rem;
+        max-width: 460px;
+        overflow: hidden;
+        color: #929699;
+        font-size: .8125rem;
+        line-height: 1rem
+    }
+}
+
+.Result .Location,
+.APBanner .Location {
+    color: #929699
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .Location,
+    .APBanner .Location {
+        color: #313233
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .Location,
+    .APBanner .Location {
+        color: #313233
+    }
+}
+
+.Result .Location .LocationFact,
+.APBanner .Location .LocationFact {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.Result .CardFooter,
+.APBanner .CardFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%
+}
+
+.Result .CardFooter .Promoted,
+.APBanner .CardFooter .Promoted {
+    font-size: .6875rem;
+    line-height: 1rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 65px;
+    flex: 0 0 65px;
+    text-align: right;
+    color: #929699
+}
+
+.Result .CardFooter .InfoIconPromoted,
+.APBanner .CardFooter .InfoIconPromoted {
+    margin: -5px -.5rem -5px 0;
+    padding: .5rem;
+    line-height: 1
+}
+
+.Result .CardFooter .ApplicationPartner,
+.APBanner .CardFooter .ApplicationPartner {
+    display: block;
+    text-align: right;
+    color: #929699;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none
+}
+
+.Result .CardFooter .ApplicationPartner .APLogo,
+.APBanner .CardFooter .ApplicationPartner .APLogo {
+    display: block;
+    width: 22px;
+    height: 32px
+}
+
+.Result .CardFooter .ApplicationPartner .APLogo .APLogoImg,
+.APBanner .CardFooter .ApplicationPartner .APLogo .APLogoImg {
+    height: 29px!important;
+    margin-top: 10px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .CardFooter .ApplicationPartner .APLogo .APLogoImg,
+    .APBanner .CardFooter .ApplicationPartner .APLogo .APLogoImg {
+        width: 22px!important;
+        height: 32px!important;
+        margin-top: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .CardFooter .ApplicationPartner .APLogo .APLogoImg,
+    .APBanner .CardFooter .ApplicationPartner .APLogo .APLogoImg {
+        width: 22px!important;
+        height: 32px!important;
+        margin-top: 0
+    }
+}
+
+.Result .ExtraFact,
+.APBanner .ExtraFact {
+    font-size: .6875rem;
+    line-height: 1rem;
+    position: relative;
+    display: inline-block;
+    color: #313233
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .ExtraFact,
+    .APBanner .ExtraFact {
+        font-size: .8125rem;
+        line-height: 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .ExtraFact,
+    .APBanner .ExtraFact {
+        font-size: .8125rem;
+        line-height: 1rem
+    }
+}
+
+.Result .ExtraFact:first-child,
+.APBanner .ExtraFact:first-child {
+    margin-top: .5rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .ExtraFact:first-child,
+    .APBanner .ExtraFact:first-child {
+        margin-top: 1rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .ExtraFact:first-child,
+    .APBanner .ExtraFact:first-child {
+        margin-top: 1rem
+    }
+}
+
+.Result .ExtraFact:not(:last-child),
+.APBanner .ExtraFact:not(:last-child) {
+    padding-right: 14px
+}
+
+.Result .ExtraFact:not(:last-child):after,
+.APBanner .ExtraFact:not(:last-child):after {
+    content: "";
+    background: #e8eced;
+    position: absolute;
+    font-size: 30px;
+    right: 4px;
+    top: 6px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .Result .ExtraFact:not(: last-child):after, .APBanner .ExtraFact:not(: last-child):after {
+        right: 2px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .Result .ExtraFact:not(: last-child):after, .APBanner .ExtraFact:not(: last-child):after {
+        right: 2px
+    }
+}
+
+.ResultPlaceholder {
+    width: 100%;
+    margin: 1px auto;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff
+}
+
+.ResultPlaceholder:before,
+.ResultPlaceholder:after {
+    content: "";
+    display: block
+}
+
+.ResultPlaceholder:after {
+    clear: both
+}
+
+.ResultPlaceholder:first-of-type {
+    margin-top: 0
+}
+
+.ResultPlaceholder .BackgroundMasker {
+    background: #fff;
+    display: block
+}
+
+.ResultPlaceholder .BackgroundMasker.Left {
+    float: left
+}
+
+.ResultPlaceholder .BackgroundMasker.Right {
+    float: right
+}
+
+.ResultPlaceholder .BackgroundMasker.ExtraSmallVertical {
+    height: 4px
+}
+
+.ResultPlaceholder .BackgroundMasker.DescriptionVertical {
+    height: 10px
+}
+
+.ResultPlaceholder .BackgroundMasker.SmallVertical {
+    height: 14px
+}
+
+.ResultPlaceholder .BackgroundMasker.MediumVertical {
+    height: 18px
+}
+
+.ResultPlaceholder .BackgroundMasker.LargeVertical {
+    height: 30px
+}
+
+.ResultPlaceholder .BackgroundMasker.XLVertical {
+    height: 70px
+}
+
+.ResultPlaceholder .BackgroundMasker.FullWidth {
+    width: 100%
+}
+
+.ResultPlaceholder .BackgroundMasker.OffsetXS {
+    width: 5%
+}
+
+.ResultPlaceholder .BackgroundMasker.OffsetS {
+    width: 20%
+}
+
+.ResultPlaceholder .BackgroundMasker.OffsetM {
+    width: 40%
+}
+
+.ResultPlaceholder .BackgroundMasker.OffsetL {
+    width: 60%
+}
+
+.ResultPlaceholder .BackgroundMasker.OffsetXL {
+    width: 80%
+}
+
+@media all and (max-width:480px) {
+    .ResultPlaceholder .BackgroundMasker.OffsetXL {
+        width: 70%
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .ResultPlaceholder .BackgroundMasker.OffsetXL {
+        width: 70%
+    }
+}
+
+@media all and (min-width:1025px) {
+    .ResultPlaceholder .BackgroundMasker.OffsetXL {
+        width: 70%
+    }
+}
+
+.ResultPlaceholder .BackgroundMasker.OffsetLogo {
+    width: calc(20% + 16px)
+}
+
+.ResultPlaceholder .BackgroundMasker.Logo {
+    margin-left: 20%;
+    width: 80%;
+    height: 37px
+}
+
+@media all and (max-width:480px) {
+    .ResultPlaceholder .BackgroundMasker.Logo {
+        margin-right: 80%;
+        width: 16px;
+        height: 37px
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .ResultPlaceholder .BackgroundMasker.Logo {
+        margin-right: 80%;
+        width: 16px;
+        height: 37px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .ResultPlaceholder .BackgroundMasker.Logo {
+        margin-right: 80%;
+        width: 16px;
+        height: 37px
+    }
+}
+
+.ResultPlaceholder .BackgroundMasker.Compare {
+    margin-left: 70%
+}
+
+.ResultPlaceholder .BackgroundMasker.TitleDivider {
+    margin-left: 25%
+}
+
+.ResultPlaceholder .AnimatedBackground {
+    background: #f6f7f8;
+    background: #eee;
+    background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eee), color-stop(18%, #ddd), color-stop(33%, #eee));
+    background: -o-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+    background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 200% 100%;
+    height: 157px;
+    position: relative
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .ResultPlaceholder .AnimatedBackground {
+        height: 203px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .ResultPlaceholder .AnimatedBackground {
+        height: 157px
+    }
+}
+
+.ResultPlaceholder .AnimatedBackground.AnimateLarge {
+    display: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .ResultPlaceholder .AnimatedBackground.AnimateLarge {
+        display: block
+    }
+}
+
+.ResultPlaceholder .AnimatedBackground.AnimateRest {
+    display: none
+}
+
+@media all and (max-width:480px) {
+    .ResultPlaceholder .AnimatedBackground.AnimateRest {
+        display: block
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .ResultPlaceholder .AnimatedBackground.AnimateRest {
+        display: block
+    }
+}
+
+@media all and (min-width:1025px) {
+    .ResultPlaceholder .AnimatedBackground.AnimateRest {
+        display: block
+    }
+}
+
+.ResultPlaceholder:first-child .AnimatedBackground {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: PlaceholderShimmer;
+    animation-name: PlaceholderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+.ResultPlaceholder:last-child {
+    height: 30px
+}
+
+.ResultPlaceholder:last-child .AnimatedBackground {
+    display: none
+}
+
+@-webkit-keyframes PlaceholderShimmer {
+    0% {
+        background-position: 100% 0
+    }
+    50% {
+        background-position: -100% 0
+    }
+    100% {
+        background-position: -100% 0
+    }
+}
+
+@keyframes PlaceholderShimmer {
+    0% {
+        background-position: 100% 0
+    }
+    50% {
+        background-position: -100% 0
+    }
+    100% {
+        background-position: -100% 0
+    }
+}
+
+#Error,
+#BadRequestError {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Error,
+    #BadRequestError {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+        margin: 1rem auto 0;
+        padding: 2rem 0;
+        text-align: left
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Error,
+    #BadRequestError {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+        margin: 1rem auto 0;
+        padding: 2rem 0;
+        text-align: left
+    }
+}
+
+#Error h1,
+#BadRequestError h1 {
+    display: inline-block;
+    font-size: 1.75em;
+    line-height: 1;
+    margin: 0;
+    padding: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Error h1,
+    #BadRequestError h1 {
+        margin-top: .7em
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Error h1,
+    #BadRequestError h1 {
+        margin-top: .7em
+    }
+}
+
+#Error p:nth-of-type(n+2),
+#BadRequestError p:nth-of-type(n+2) {
+    margin: 0;
+    font-size: 1.2rem
+}
+
+#Error .BasicMessage,
+#BadRequestError .BasicMessage {
+    display: block;
+    margin: 0 auto 3em
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Error .BasicMessage,
+    #BadRequestError .BasicMessage {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
+        margin: 1em auto 3em;
+        padding: 0 1em;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Error .BasicMessage,
+    #BadRequestError .BasicMessage {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
+        margin: 1em auto 3em;
+        padding: 0 1em;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+}
+
+#Error .BasicMessage .LoadingAnimation,
+#BadRequestError .BasicMessage .LoadingAnimation {
+    font-size: 1.5em;
+    vertical-align: text-top;
+    line-height: 1
+}
+
+#Error .ErrorImageWrapper,
+#BadRequestError .ErrorImageWrapper {
+    width: auto;
+    text-align: center
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #Error .ErrorImageWrapper,
+    #BadRequestError .ErrorImageWrapper {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
+        margin: 1em 1em 0;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1
+    }
+}
+
+@media all and (min-width:1025px) {
+    #Error .ErrorImageWrapper,
+    #BadRequestError .ErrorImageWrapper {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
+        margin: 1em 1em 0;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1
+    }
+}
+
+#Error .ErrorImageWrapper img,
+#BadRequestError .ErrorImageWrapper img {
+    max-width: 80%
+}
+
+#BadRequestError .BadRequestText {
+    margin-bottom: 2em
+}
+
+.InfoIcon {
+    cursor: pointer
+}
+
+.InfoIcon:before {
+    display: inline-block
+}
+
+.InfoToolTip {
+    font-family: open sans, Helvetica, Arial, sans-serif;
+    display: none
+}
+
+.InfoToolTip.is-Active {
+    display: block;
+    width: 250px;
+    position: fixed;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 100
+}
+
+.InfoToolTip .InfoToolTipContent {
+    position: relative;
+    display: block;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    font-size: .8rem;
+    color: #929699;
+    text-align: center;
+    margin: 0;
+    padding: .75rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.InfoToolTip .InfoToolTipContent:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: -.5rem;
+    height: .8rem;
+    left: calc(50% - 0.5rem);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: .8rem;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    border-left: 1px solid rgba(0, 0, 0, .2)
+}
+
+.InfoToolTip.NoseRight {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+.InfoToolTip.NoseRight .InfoToolTipContent:before {
+    left: calc(100% - 1rem)
+}
+
+.InfoToolTip.NoseLeft {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+.InfoToolTip.NoseLeft .InfoToolTipContent:before {
+    left: .5rem
+}
+
+.InfoToolTip.NoNose {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+.InfoToolTip.NoNose .InfoToolTipContent:before {
+    display: none
+}
+
+.InfoToolTip.NoseBottom .InfoToolTipContent:before {
+    top: auto;
+    bottom: calc(-0.4rem - 1px);
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg)
+}
+
+.BannerPlaceHolder {
+    margin: 1em auto
+}
+
+.BannerPlaceHolder.Empty {
+    display: none;
+    margin: 0
+}
+
+.BannerPlaceHolder .Banner {
+    padding-left: 10px;
+    display: inline-block
+}
+
+.BannerPlaceHolder .Banner:first-of-type {
+    padding-left: 0
+}
+
+.BannerPlaceHolder .Banner a {
+    display: inline-block
+}
+
+.BannerPlaceHolder .Banner a img {
+    outline: 1px solid #e8eced;
+    outline-offset: -1px;
+    height: inherit!important
+}
+
+div[data-size=mpu] {
+    height: 250px;
+    max-width: 1230px;
+    text-align: center
+}
+
+div[data-size=leaderboard] {
+    height: 90px;
+    max-width: 728px
+}
+
+:root {
+    --animation-speed: 0.5s;
+    --animation-border-size: 1px;
+    --animation-border-width: 80%
+}
+
+.HorizontalBorder {
+    width: var(--animation-border-width);
+    height: var(--animation-border-size);
+    left: 100%
+}
+
+.HorizontalBorder.topBorder {
+    top: 0
+}
+
+.HorizontalBorder.topBorder.Activated {
+    -webkit-animation: topBorderAnimation var(--animation-speed);
+    animation: topBorderAnimation var(--animation-speed);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+.HorizontalBorder.bottomBorder {
+    top: calc(100% - var(--animation-border-size))
+}
+
+.HorizontalBorder.bottomBorder.Activated {
+    -webkit-animation: bottomBorderAnimation var(--animation-speed);
+    animation: bottomBorderAnimation var(--animation-speed);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: calc(var(--animation-speed)/2);
+    animation-delay: calc(var(--animation-speed)/2)
+}
+
+.VerticalBorder {
+    width: var(--animation-border-size);
+    height: var(--animation-border-width);
+    top: calc(0px - var(--animation-border-width))
+}
+
+.VerticalBorder.leftBorder {
+    left: 0
+}
+
+.VerticalBorder.leftBorder.Activated {
+    -webkit-animation: leftBorderAnimation var(--animation-speed);
+    animation: leftBorderAnimation var(--animation-speed);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: calc(var(--animation-speed)/2);
+    animation-delay: calc(var(--animation-speed)/2)
+}
+
+.VerticalBorder.rightBorder {
+    left: calc(100% - var(--animation-border-size))
+}
+
+.VerticalBorder.rightBorder.Activated {
+    -webkit-animation: rightBorderAnimation var(--animation-speed);
+    animation: rightBorderAnimation var(--animation-speed);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+.AnimatedBorder {
+    background-color: #f95c39;
+    position: absolute
+}
+
+.AnimatedBackground {
+    position: absolute;
+    background-color: #f95c39;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%
+}
+
+.AnimatedBackground.Activated {
+    -webkit-animation: backgroundAnimation calc(var(--animation-speed) * 2);
+    animation: backgroundAnimation calc(var(--animation-speed) * 2);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+.HeartAnimation {
+    position: absolute;
+    left: -.45rem;
+    top: .5rem;
+    width: 30px!important
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .HeartAnimation {
+        left: -.45rem;
+        top: 1.01rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .HeartAnimation {
+        top: 12px;
+        left: -19px;
+        width: 46px!important
+    }
+}
+
+@media all and (min-width:1025px) {
+    .HeartAnimation {
+        top: 12px;
+        left: -19px;
+        width: 46px!important
+    }
+}
+
+@-webkit-keyframes backgroundAnimation {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: .1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: .1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes topBorderAnimation {
+    0% {
+        left: 100%
+    }
+    50% {
+        left: 0
+    }
+    100% {
+        left: calc(0px - var(--animation-border-width))
+    }
+}
+
+@keyframes topBorderAnimation {
+    0% {
+        left: 100%
+    }
+    50% {
+        left: 0
+    }
+    100% {
+        left: calc(0px - var(--animation-border-width))
+    }
+}
+
+@-webkit-keyframes leftBorderAnimation {
+    0% {
+        top: calc(0px - var(--animation-border-width))
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes leftBorderAnimation {
+    0% {
+        top: calc(0px - var(--animation-border-width))
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes rightBorderAnimation {
+    0% {
+        top: calc(0px - var(--animation-border-width))
+    }
+    50% {
+        top: 0
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes rightBorderAnimation {
+    0% {
+        top: calc(0px - var(--animation-border-width))
+    }
+    50% {
+        top: 0
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes bottomBorderAnimation {
+    0% {
+        left: 100%
+    }
+    100% {
+        left: -100%
+    }
+}
+
+@keyframes bottomBorderAnimation {
+    0% {
+        left: 100%
+    }
+    100% {
+        left: -100%
+    }
+}
+
+#SortingContainer {
+    z-index: 75;
+    background: #fff
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SortingContainer {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SortingContainer {
+        display: none
+    }
+}
+
+#SortingContainer .SortingContent {
+    position: absolute;
+    right: 0;
+    background: #fff
+}
+
+#SortingContainer .SortingOption {
+    width: 100%;
+    padding: .5rem 0;
+    color: #929699;
+    font-size: 1rem
+}
+
+#SortingContainer .SortingOption:hover {
+    text-decoration: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #SortingContainer .SortingOption:hover {
+        cursor: pointer
+    }
+}
+
+@media all and (min-width:1025px) {
+    #SortingContainer .SortingOption:hover {
+        cursor: pointer
+    }
+}
+
+#SortingContainer .SortingOption.is-active {
+    color: #247ba0
+}
+
+#SortingContainer .SortingOption:first-of-type {
+    padding-top: 1rem
+}
+
+#SortingContainer .SortingOption:last-of-type {
+    padding-bottom: 1rem
+}
+
+#SortingContainer .SortingContainer {
+    max-width: 448px;
+    padding: 1rem
+}
+
+#SortingContainer .SortingContainer .SortingButton {
+    position: absolute;
+    bottom: 1rem;
+    width: calc(100% - 2rem);
+    background: #247ba0;
+    color: #fff;
+    border-color: #247ba0
+}
+
+#TuitionSettings {
+    position: relative;
+    padding: .25rem 1.25rem
+}
+
+#TuitionSettings .SettingsTitle {
+    margin: 1rem 1rem 2rem 0;
+    color: #929699;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400
+}
+
+#TuitionSettings .SettingsTitle .SettingsTitleIcon {
+    margin-right: .5rem;
+    font-size: 1rem
+}
+
+#TuitionSettings .SettingsSwitcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2rem
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #TuitionSettings .SettingsSwitcher {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #TuitionSettings .SettingsSwitcher {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap
+    }
+}
+
+@media all and (min-width:1025px) {
+    #TuitionSettings .SettingsSwitcher {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap
+    }
+}
+
+#TuitionSettings .SettingsLabel {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    margin-bottom: .5rem;
+    color: #313233;
+    font-size: .875rem
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #TuitionSettings .SettingsLabel {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 6rem;
+        flex: 0 0 6rem;
+        margin-bottom: 0
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #TuitionSettings .SettingsLabel {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 6rem;
+        flex: 0 0 6rem;
+        margin-bottom: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #TuitionSettings .SettingsLabel {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 6rem;
+        flex: 0 0 6rem;
+        margin-bottom: 0
+    }
+}
+
+#TuitionSettings .SettingsSelect {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 12rem;
+    flex: 1 0 12rem;
+    width: 15rem;
+    padding: .5rem;
+    border: 1px solid #e8eced;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: .875rem
+}
+
+#TuitionSettings .CheckMarkBox {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 1rem;
+    flex: 0 0 1rem;
+    font-size: .875rem;
+    color: #44af69;
+    opacity: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #TuitionSettings .CheckMarkBox {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 5rem;
+        flex: 0 0 5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #TuitionSettings .CheckMarkBox {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 5rem;
+        flex: 0 0 5rem
+    }
+}
+
+#TuitionSettings .CheckMarkBox.is-fadingIn {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+#TuitionSettings .CheckMarkBox.is-fadingOut {
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+#TuitionSettings .CheckMarkIcon {
+    margin-left: .5rem
+}
+
+#TuitionSettings .CheckMarkIcon:before {
+    font-size: 1rem;
+    color: #44af69
+}
+
+#TuitionSettings .CheckMarkText {
+    display: none
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #TuitionSettings .CheckMarkText {
+        display: inline
+    }
+}
+
+@media all and (min-width:1025px) {
+    #TuitionSettings .CheckMarkText {
+        display: inline
+    }
+}
+
+#TuitionSettings .Reason {
+    margin-bottom: 2rem;
+    margin-right: 1rem
+}
+
+#TuitionSettings .ReasonLabel {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0;
+    color: #313233;
+    font-size: .875rem
+}
+
+#TuitionSettings .ReasonExplanation {
+    margin: 0;
+    font-size: .8rem;
+    color: #929699
+}
+
+#TuitionSettings .InfoToolTipContent {
+    text-align: left
+}
+
+#FooterAboutUs .Header {
+    margin-bottom: 1rem;
+    color: #313233
+}
+
+#FooterAboutUs .List {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+#FooterAboutUs .List .ListItem {
+    padding: 0
+}
+
+#FooterAboutUs .Link {
+    color: #247ba0
+}
+
+#FooterAboutUs .Link:hover {
+    color: #1b5a75
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterAboutUs .Header {
+        color: #fff
+    }
+    #FooterAboutUs .Link {
+        color: #fff
+    }
+    #FooterAboutUs .Link:hover {
+        color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterAboutUs .Header {
+        color: #fff
+    }
+    #FooterAboutUs .Link {
+        color: #fff
+    }
+    #FooterAboutUs .Link:hover {
+        color: #fff
+    }
+}
+
+#FooterDisclaimer {
+    max-width: 460px;
+    margin: 0 auto;
+    font-size: .8rem
+}
+
+#FooterDisclaimer .LegalList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+#FooterDisclaimer .LegalListItem {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterDisclaimer .LegalListItem {
+        line-height: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterDisclaimer .LegalListItem {
+        line-height: 1.5rem
+    }
+}
+
+#FooterDisclaimer .LegalLink {
+    color: #247ba0
+}
+
+#FooterDisclaimer .LegalLink:hover {
+    color: #1b5a75;
+    text-decoration: underline
+}
+
+#ClosePopup {
+    position: absolute;
+    z-index: 25;
+    right: 0;
+    top: 0;
+    height: 3.2rem;
+    width: 3.2rem;
+    cursor: pointer
+}
+
+#ClosePopup:hover i {
+    color: #313233
+}
+
+#ClosePopup i {
+    color: #c4c9cc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem
+}
+
+.ViewPasswordContainer {
+    position: relative
+}
+
+.ViewPasswordContainer .ViewPassword {
+    padding-right: 3.5rem!important
+}
+
+.ViewPasswordContainer .ToggleViewPassword {
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 .75rem;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    font-size: .875rem;
+    color: #c4c9cc;
+    height: 35px;
+    width: auto!important
+}
+
+.ViewPasswordContainer .ToggleViewPassword:hover {
+    text-decoration: none;
+    color: #c4c9cc;
+    cursor: default
+}
+
+.WishlistCounter {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    font-size: 10px;
+    background: #f95c39;
+    color: #fff;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    text-align: center
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .WishlistCounter {
+        top: 4px
+    }
+}
+
+@media all and (min-width:1025px) {
+    .WishlistCounter {
+        top: 4px
+    }
+}
+
+.WishlistCounter p {
+    font-family: open sans, Arial, Helvetica, sans-serif!important;
+    margin: 0;
+    line-height: 17px
+}
+
+.WishlistIcon.Empty span {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: popIn .8s forwards;
+    animation: popIn .8s forwards
+}
+
+.WishlistIcon.Empty span p {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-animation: rotateIn .3s forwards;
+    animation: rotateIn .3s forwards;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.WishlistIcon.NotEmpty span p {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-animation: fullRotate .6s forwards;
+    animation: fullRotate .6s forwards
+}
+
+.DesktopOnlyBlock .WishlistIcon.HeartBeat {
+    -webkit-animation: heartbeatDesktop .7s 1;
+    animation: heartbeatDesktop .7s 1
+}
+
+.MobileOnlyBlock .WishlistIcon.HeartBeat {
+    -webkit-animation: heartbeatMobile .7s 1;
+    animation: heartbeatMobile .7s 1
+}
+
+@-webkit-keyframes heartbeatMobile {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        top: 19px;
+        left: 11px
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        top: 19px;
+        left: 11px
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        top: 19px;
+        left: 11px
+    }
+}
+
+@keyframes heartbeatMobile {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        top: 19px;
+        left: 11px
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        top: 19px;
+        left: 11px
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        top: 19px;
+        left: 11px
+    }
+}
+
+@-webkit-keyframes heartbeatDesktop {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes heartbeatDesktop {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes popIn {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes popIn {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes fullRotate {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+    50% {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+}
+
+@keyframes fullRotate {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+    50% {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+}
+
+@-webkit-keyframes rotateIn {
+    0% {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg)
+    }
+}
+
+.NavBarExperimentDesktop .WishlistCounter {
+    top: 5px;
+    left: 12px
+}
+
+#HeaderMainMenu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    -webkit-transition: left .5s;
+    -o-transition: left .5s;
+    transition: left .5s
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu {
+        display: block;
+        position: static;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu {
+        display: block;
+        position: static;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+}
+
+#HeaderMainMenu ul {
+    list-style: none;
+    padding: 0
+}
+
+#HeaderMainMenu .MainMenuHideButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .MainMenuHideButton {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .MainMenuHideButton {
+        display: none
+    }
+}
+
+#HeaderMainMenu .MainMenuSections {
+    background-color: #e8eced;
+    margin: 0;
+    overflow: hidden
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .MainMenuSections {
+        margin-left: 1.5rem;
+        background-color: transparent
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .MainMenuSections {
+        margin-left: 1.5rem;
+        background-color: transparent
+    }
+}
+
+#HeaderMainMenu .SectionsContent {
+    position: absolute;
+    top: 3.75rem;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    z-index: 100;
+    left: auto
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionsContent {
+        left: 0
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionsContent {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionsContent {
+        display: none
+    }
+}
+
+#HeaderMainMenu .SectionsContent.is-open {
+    display: block;
+    overflow: visible
+}
+
+#HeaderMainMenu .SectionNavigationItem {
+    margin: 0;
+    float: left;
+    position: relative
+}
+
+#HeaderMainMenu .SectionNavigationItem .SectionNavigationLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1.25rem 0 1rem .75rem;
+    cursor: pointer
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationLink {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        width: 56px
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationLink {
+        padding-left: 1rem
+    }
+}
+
+#HeaderMainMenu .SectionNavigationItem .SectionNavigationLink:hover {
+    text-decoration: none
+}
+
+#HeaderMainMenu .SectionNavigationItem .SectionNavigationIcon {
+    pointer-events: none;
+    padding-right: .25rem;
+    font-size: 16px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationIcon {
+        font-size: 25px
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationIcon {
+        font-size: 25px
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationIcon {
+        padding-right: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationIcon {
+        padding-right: .5rem
+    }
+}
+
+#HeaderMainMenu .SectionNavigationItem .SectionNavigationLabel {
+    padding-right: .75rem;
+    border-right: 1px solid #e8eced;
+    pointer-events: none;
+    width: 100%;
+    font-size: 15px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationLabel {
+        text-align: center;
+        font-size: 11px;
+        padding-right: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionNavigationItem .SectionNavigationLabel {
+        font-size: 13px;
+        padding-right: 1rem
+    }
+}
+
+#HeaderMainMenu .SectionNavigationItem:last-child .SectionNavigationLabel {
+    border-right: 0
+}
+
+#HeaderMainMenu .SectionsContent .SectionNavigationItem {
+    display: none;
+    width: 100vw;
+    min-width: 320px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem {
+        left: 0!important
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem {
+        position: absolute;
+        width: 700px
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem {
+        position: absolute;
+        width: 700px
+    }
+}
+
+#HeaderMainMenu .SectionsContent .SectionNavigationItem.is-open {
+    display: block
+}
+
+#HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+    position: absolute;
+    background-color: #fff;
+    top: -60px
+}
+
+@media all and (max-width:480px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+        left: 0!important
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+        left: 0!important
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+        left: 0!important
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+        position: absolute;
+        top: -54px;
+        z-index: 100;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        padding: .9rem 0 .9rem 1rem
+    }
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink::after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 10px;
+        width: 100%
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+        position: absolute;
+        top: -54px;
+        z-index: 100;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        padding: .9rem 0 .9rem 1rem
+    }
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink::after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 10px;
+        width: 100%
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLink {
+        padding: .35rem 0
+    }
+}
+
+#HeaderMainMenu .SectionsContent .SectionNavigationItem .SectionNavigationLabel {
+    border-right: 0
+}
+
+#HeaderMainMenu .SectionContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 50;
+    position: relative;
+    background-color: #fff;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    -webkit-overflow-scrolling: touch
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionContent {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-height: calc(100vh - 5rem);
+        height: auto;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4)
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionContent {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-height: calc(100vh - 5rem);
+        height: auto;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4)
+    }
+}
+
+#HeaderMainMenu .SectionContentColumn {
+    padding: 1.5rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnLeft {
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 0%;
+        flex: 2 1 0%
+    }
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnRight {
+        padding-left: 0;
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 0%;
+        flex: 2 1 0%
+    }
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnFullWidth {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: 100%
+    }
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnFullWidth:first-of-type {
+        padding-bottom: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnLeft {
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 0%;
+        flex: 2 1 0%
+    }
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnRight {
+        padding-left: 0;
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 0%;
+        flex: 2 1 0%
+    }
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnFullWidth {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: 100%
+    }
+    #HeaderMainMenu .SectionContentColumn.SectionContentColumnFullWidth:first-of-type {
+        padding-bottom: 0
+    }
+}
+
+#HeaderMainMenu .SectionContentColumn:first-child {
+    padding-bottom: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionContentColumn:first-child {
+        padding-bottom: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionContentColumn:first-child {
+        padding-bottom: 1.5rem
+    }
+}
+
+#HeaderMainMenu .SectionContentColumn:last-child {
+    padding-bottom: 90px
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SectionContentColumn:last-child {
+        padding-bottom: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SectionContentColumn:last-child {
+        padding-bottom: 1.5rem
+    }
+}
+
+#HeaderMainMenu .SubSectionCtaButton {
+    border: solid 1px #e8eced;
+    color: #929699;
+    padding: .75rem 1rem;
+    position: relative;
+    border-radius: 3px
+}
+
+#HeaderMainMenu .SubSectionCtaButton:hover {
+    text-decoration: none
+}
+
+#HeaderMainMenu .SubSectionCtaButton:hover .SubSectionCtaIcon,
+#HeaderMainMenu .SubSectionCtaButton:hover .SubSectionCtaTitle {
+    color: #1b5a75;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s
+}
+
+#HeaderMainMenu .SubSectionCtaButton .SubSectionCtaIcon {
+    width: 35px;
+    float: left;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #247ba0;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s
+}
+
+#HeaderMainMenu .SubSectionCtaButton .SubSectionCtaIcon .APLogoImg {
+    width: 28px;
+    position: relative;
+    left: 3px;
+    top: 3px
+}
+
+#HeaderMainMenu .SubSectionCtaButton .SubSectionCtaTitle {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    padding-left: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #247ba0;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s
+}
+
+#HeaderMainMenu .SubSectionCtaButton .SubSectionCtaDescription {
+    display: block;
+    width: 100%;
+    padding-left: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#HeaderMainMenu .SubSectionContentTitle {
+    width: 100%
+}
+
+#HeaderMainMenu .SubSectionContentTitle strong {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: .5rem
+}
+
+#HeaderMainMenu .SubSectionContent .ContentItemIcon {
+    color: #929699;
+    font-size: 1.25rem;
+    padding-right: .5rem
+}
+
+#HeaderMainMenu .SubSectionContent .SubMenuSectionContent li:last-child {
+    margin-bottom: 0
+}
+
+#HeaderMainMenu .SubSectionContent .SubMenuSectionContent li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+#HeaderMainMenu .SubSectionContent .SubMenuSectionContent li a:hover {
+    text-decoration: none
+}
+
+#HeaderMainMenu .SubSectionContent .SubSectionContentListTwoColumns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+#HeaderMainMenu .SubSectionContent .SubSectionContentListTwoColumns li {
+    margin-top: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #HeaderMainMenu .SubSectionContent .SubSectionContentListTwoColumns li {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SubSectionContent .SubSectionContentListTwoColumns li {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SubSectionContent .SubSectionContentListTwoColumns li {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%
+    }
+}
+
+#HeaderMainMenu .SubSectionContent .SubSectionContentListPrimary a:hover {
+    color: #f95c39;
+    text-decoration: none
+}
+
+#HeaderMainMenu .SubSectionContent .SubSectionContentListPrimary a:hover .Icons {
+    color: #f95c39
+}
+
+#HeaderMainMenu .SubSectionContent.SubSectionContentSecondary li a {
+    color: #929699
+}
+
+#HeaderMainMenu .SubSectionContent.SubSectionContentCtas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap
+}
+
+#HeaderMainMenu .SubSectionContent.SubSectionContentCtas .SubSectionCtaButton {
+    margin-bottom: 1rem;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderMainMenu .SubSectionContent.SubSectionContentCtas .SubSectionCtaButton {
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 0%;
+        flex: 2 1 0%;
+        margin-bottom: 0;
+        margin-right: 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderMainMenu .SubSectionContent.SubSectionContentCtas .SubSectionCtaButton {
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 0%;
+        flex: 2 1 0%;
+        margin-bottom: 0;
+        margin-right: 1.5rem
+    }
+}
+
+#HeaderMainMenu .SubSectionContent.SubSectionContentCtas .SubSectionCtaButton:last-of-type {
+    margin-right: 0
+}
+
+#HeaderMainMenu .SubSectionContent.SubSectionContentCtas .SubSectionContentTitle {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
+}
+
+#HeaderMainMenu .SubSectionViewAllLink {
+    color: #929699;
+    margin-top: .75rem;
+    display: inline-block
+}
+
+#HeaderMainMenu #MainMenuBackground {
+    display: none;
+    background: rgba(49, 50, 51, .4);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 3.75rem;
+    position: fixed;
+    z-index: 50
+}
+
+body.js-HeaderMainMenuOpened {
+    overflow: hidden;
+    height: 100%;
+    -webkit-overflow-scrolling: auto
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    body.js-HeaderMainMenuOpened #HeaderMainMenu #MainMenuBackground {
+        display: block
+    }
+}
+
+@media all and (min-width:1025px) {
+    body.js-HeaderMainMenuOpened #HeaderMainMenu #MainMenuBackground {
+        display: block
+    }
+}
+
+body.js-HeaderMainMenuOpened #HeaderMainMenu {
+    display: block;
+    left: 0;
+    -webkit-transition: left .5s;
+    -o-transition: left .5s;
+    transition: left .5s;
+    z-index: 125
+}
+
+.js-showMainMenuButton {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    font-size: 35px
+}
+
+#HeaderSearch {
+    -webkit-transition: top .25s cubic-bezier(.3, .6, 0, 1);
+    -o-transition: top .25s cubic-bezier(.3, .6, 0, 1);
+    transition: top .25s cubic-bezier(.3, .6, 0, 1)
+}
+
+@media all and (max-width:480px) {
+    #HeaderSearch {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: -1.25rem;
+        right: -1.25rem;
+        width: auto;
+        border-top: 1px solid #c4c9cc;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4)
+    }
+    #HeaderSearch.is-shown {
+        top: 60px
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #HeaderSearch {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: -1.25rem;
+        right: -1.25rem;
+        width: auto;
+        border-top: 1px solid #c4c9cc;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .4)
+    }
+    #HeaderSearch.is-shown {
+        top: 60px
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderSearch {
+        position: relative;
+        top: -50px;
+        max-width: 29rem;
+        border-left: 0;
+        margin: 0 auto
+    }
+    #HeaderSearch.is-shown {
+        top: 0
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderSearch {
+        position: relative;
+        top: -50px;
+        max-width: 29rem;
+        border-left: 0;
+        margin: 0 auto
+    }
+    #HeaderSearch.is-shown {
+        top: 0
+    }
+}
+
+#HeaderSearch .SearchIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem
+}
+
+#HeaderSearch.InView {
+    left: -1.25rem;
+    right: -1.25rem;
+    width: auto
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderSearch.InView {
+        left: auto;
+        right: auto;
+        width: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderSearch.InView {
+        left: auto;
+        right: auto;
+        width: auto
+    }
+}
+
+#HeaderSearch #MenuSearch {
+    position: relative
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderSearch #MenuSearch {
+        display: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderSearch #MenuSearch {
+        display: none
+    }
+}
+
+#HeaderSearch #MenuSearch:before {
+    font-size: .9375rem;
+    line-height: 1.5rem
+}
+
+#HeaderSearch .SearchButton {
+    position: relative
+}
+
+#HeaderSearch .SearchButtonIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem
+}
+
+#HeaderSearch .AutoCompleteContainer {
+    z-index: 100
+}
+
+#HeaderSearch form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: calc(100% - 1.5rem);
+    padding: .75rem .5rem;
+    background-color: #fff
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderSearch form {
+        padding: 0 1rem;
+        background-color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderSearch form {
+        padding: 0 1rem;
+        background-color: #fff
+    }
+}
+
+#HeaderSearch form button,
+#HeaderSearch form input {
+    height: 2rem;
+    font-size: .8rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderSearch form button,
+    #HeaderSearch form input {
+        height: 2rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderSearch form button,
+    #HeaderSearch form input {
+        height: 2rem
+    }
+}
+
+#HeaderSearch form .InputWrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%
+}
+
+#HeaderSearch form .InputWrapper:first-of-type input {
+    border-radius: 3px 0 0 3px
+}
+
+#HeaderSearch form .InputWrapper:nth-of-type(2) {
+    display: none;
+    border-right: 0
+}
+
+@media all and (min-width:1024px) {
+    #HeaderSearch form .InputWrapper:nth-of-type(2) {
+        display: block
+    }
+}
+
+#HeaderSearch form input {
+    width: calc(100% + 2px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .6rem;
+    border: 1px solid #c4c9cc;
+    border-right: none;
+    color: #313233
+}
+
+#HeaderSearch form button {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    background: #f95c39;
+    border: 1px solid #f95c39;
+    border-radius: 0 3px 3px 0;
+    color: #fff
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #HeaderSearch form button {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+        flex: 0 0 50px
+    }
+}
+
+@media all and (min-width:1025px) {
+    #HeaderSearch form button {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+        flex: 0 0 50px
+    }
+}
+
+#HeaderSearch form button:hover,
+#HeaderSearch form button:focus {
+    background: #cc4c2f;
+    cursor: pointer
+}
+
+#HeaderSearch form button:before {
+    font-size: 1.2rem
+}
+
+#HeaderSearch form button.Loading:before,
+#HeaderSearch form button.Loading span {
+    -webkit-animation: fade 2s linear infinite;
+    animation: fade 2s linear infinite
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .2
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .2
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.HeaderToggleContent {
+    position: absolute;
+    top: -110vh;
+    left: -1rem;
+    width: calc(100% - 2rem);
+    z-index: 125
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .HeaderToggleContent {
+        left: -1.5rem;
+        width: calc(100% + 3rem)
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .HeaderToggleContent {
+        position: relative;
+        right: 0;
+        left: 0;
+        width: 100%;
+        top: auto;
+        z-index: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    .HeaderToggleContent {
+        position: relative;
+        right: 0;
+        left: 0;
+        width: 100%;
+        top: auto;
+        z-index: auto
+    }
+}
+
+.HeaderToggleContent.InView {
+    top: 100%;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(49, 50, 51, .3);
+    box-shadow: 0 1px 4px 0 rgba(49, 50, 51, .3)
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .HeaderToggleContent.InView {
+        top: initial;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+}
+
+@media all and (min-width:1025px) {
+    .HeaderToggleContent.InView {
+        top: initial;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+}
+
+#HeaderToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%
+}
+
+#HeaderToggle .HeaderToggleItem {
+    position: relative;
+    width: 2.75rem;
+    height: 3.75rem;
+    cursor: pointer
+}
+
+#HeaderToggle .HeaderToggleItem .HeaderIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem
+}
+
+#HeaderToggle .HeaderToggleItem .WishlistIcon {
+    font-size: 1.5rem
+}
+
+#HeaderToggle .HeaderToggleItem .MainMenuIcon {
+    font-size: 2rem
+}
+
+#HeaderToggle .HeaderToggleItem .HeaderIcon {
+    color: #247ba0
+}
+
+#HeaderToggle .HeaderToggleItem .HeaderIcon.SearchIcon,
+#HeaderToggle .HeaderToggleItem .HeaderIcon.WishlistIcon {
+    color: #f95c39
+}
+
+#HeaderToggle .HeaderToggleItem.InView:after {
+    background-color: #f95c39
+}
+
+#HeaderToggle .HeaderToggleItem.InView:before {
+    color: #f95c39
+}
+
+#GlobalStudyAwardsEntryPoint {
+    background-color: #fff;
+    padding: 1rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #GlobalStudyAwardsEntryPoint {
+        padding: 2rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #GlobalStudyAwardsEntryPoint {
+        padding: 2rem
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 2rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 2rem
+    }
+}
+
+#GlobalStudyAwardsEntryPoint .GSAInformation .EarthIcon {
+    color: #247ba0;
+    font-size: 8rem;
+    width: 100%
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation .EarthIcon {
+        font-size: 5rem;
+        width: auto
+    }
+}
+
+@media all and (min-width:1025px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation .EarthIcon {
+        font-size: 5rem;
+        width: auto
+    }
+}
+
+@media all and (max-width:480px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation .EarthIcon {
+        display: block;
+        text-align: center;
+        padding: 2rem .5rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation .EarthIcon {
+        display: block;
+        text-align: center;
+        padding: 2rem .5rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+#GlobalStudyAwardsEntryPoint .GSAInformation p {
+    margin: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation p {
+        padding-left: 2rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    #GlobalStudyAwardsEntryPoint .GSAInformation p {
+        padding-left: 2rem
+    }
+}
+
+#GlobalStudyAwardsEntryPoint .GSAInformation p strong {
+    white-space: nowrap
+}
+
+#GlobalStudyAwardsEntryPoint .ButtonContainer {
+    text-align: center;
+    margin-top: 1.5rem
+}
+
+#FooterHiring {
+    display: block;
+    margin: .5rem 0 0
+}
+
+#FooterHiring .FooterHiringLink {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    display: block;
+    color: #313233
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterHiring .FooterHiringLink {
+        display: inline-block;
+        padding-right: .3rem;
+        margin-right: .5rem;
+        border-right: 1px solid #313233
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterHiring .FooterHiringLink {
+        display: inline-block;
+        padding-right: .3rem;
+        margin-right: .5rem;
+        border-right: 1px solid #313233
+    }
+}
+
+#FooterHiring .FooterHiringLink:active,
+#FooterHiring .FooterHiringLink:visited {
+    color: #313233
+}
+
+#FooterHiring .FooterHiringLink:hover {
+    color: #313233;
+    text-decoration: none;
+    text-decoration: none
+}
+
+#FooterHiring .FooterHiringLink .cwc-icon {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background: transparent url(//monet-prtl-co.imgix.net/Shared/crafted-with-care.svg) no-repeat
+}
+
+#FooterOurPortals .Header {
+    margin-bottom: 1rem;
+    color: #313233
+}
+
+#FooterOurPortals .List {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #247ba0
+}
+
+#FooterOurPortals .List:hover {
+    color: #1b5a75
+}
+
+#FooterOurPortals .List .ListItem {
+    padding: 0
+}
+
+#FooterOurPortals .Link {
+    color: #247ba0
+}
+
+#FooterOurPortals .Link:hover {
+    color: #1b5a75
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterOurPortals .Header {
+        color: #fff
+    }
+    #FooterOurPortals .Link {
+        color: #fff
+    }
+    #FooterOurPortals .Link:hover {
+        color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterOurPortals .Header {
+        color: #fff
+    }
+    #FooterOurPortals .Link {
+        color: #fff
+    }
+    #FooterOurPortals .Link:hover {
+        color: #fff
+    }
+}
+
+#FooterCurrency {
+    margin-bottom: 2rem
+}
+
+#FooterCurrency .Header {
+    margin-bottom: 1rem;
+    color: #313233
+}
+
+#FooterCurrency .Link {
+    color: #247ba0
+}
+
+#FooterCurrency .Link:hover {
+    color: #1b5a75
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterCurrency .Header {
+        color: #fff
+    }
+    #FooterCurrency .Link {
+        color: #fff
+    }
+    #FooterCurrency .Link:hover {
+        color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterCurrency .Header {
+        color: #fff
+    }
+    #FooterCurrency .Link {
+        color: #fff
+    }
+    #FooterCurrency .Link:hover {
+        color: #fff
+    }
+}
+
+#FooterCurrency .TuitionPreferencesButton {
+    color: #247ba0;
+    border: 2px solid #247ba0;
+    border-radius: 2px;
+    background-color: transparent
+}
+
+#FooterCurrency .TuitionPreferencesButton:hover {
+    background-color: #fff;
+    color: #313233
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterCurrency .TuitionPreferencesButton {
+        color: #fff;
+        border: 2px solid #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterCurrency .TuitionPreferencesButton {
+        color: #fff;
+        border: 2px solid #fff
+    }
+}
+
+#FooterCurrency .TuitionPreferencesButton .LocationText+.CurrencyText:empty {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0
+}
+
+#FooterCurrency .TuitionPreferencesButton .LocationText:empty+.CurrencyText {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0
+}
+
+#FooterCurrency .TuitionPreferencesButton .CurrencyText {
+    margin-left: .4rem;
+    padding-left: .5rem;
+    border-left: 1px solid #c4c9cc
+}
+
+#FooterScrollToTop {
+    display: block;
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    margin: 0 auto
+}
+
+#FooterScrollToTop #ToTopRocketSVG {
+    overflow: visible;
+    width: 26px
+}
+
+#FooterScrollToTop #ToTopRocket {
+    fill: #247ba0
+}
+
+#FooterScrollToTop #ToTopRocketWindow {
+    fill: #247ba0
+}
+
+#FooterScrollToTop #ToTopRocketFlame {
+    fill: transparent;
+    transform-box: fill-box;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+
+@supports(-ms-ime-align:auto) {
+    #FooterScrollToTop #ToTopRocketFlame {
+        -webkit-transform-origin: 50% 50% 0;
+        -ms-transform-origin: 50% 50% 0;
+        transform-origin: 50% 50% 0
+    }
+}
+
+#FooterScrollToTop .FooterScrollToTopText {
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    line-height: 1;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    text-align: center;
+    width: calc(6rem - 2px)
+}
+
+#FooterScrollToTop .FooterScrollToTopButton {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    color: #247ba0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #edf2f4;
+    cursor: pointer;
+    text-align: center;
+    height: 6rem;
+    width: 6rem;
+    line-height: 0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterScrollToTop .FooterScrollToTopButton {
+        border-color: #f95c39;
+        -webkit-box-shadow: 0 4px 12px 0 rgba(49, 50, 51, .3);
+        box-shadow: 0 4px 12px 0 rgba(49, 50, 51, .3)
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterScrollToTop .FooterScrollToTopButton {
+        border-color: #f95c39;
+        -webkit-box-shadow: 0 4px 12px 0 rgba(49, 50, 51, .3);
+        box-shadow: 0 4px 12px 0 rgba(49, 50, 51, .3)
+    }
+}
+
+#FooterScrollToTop .FooterScrollToTopButton .FooterScrollToTopRocket {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: calc(6rem - 2px);
+    height: 48px;
+    outline: none;
+    margin: 0 auto;
+    overflow: visible;
+    z-index: 50
+}
+
+#FooterScrollToTop .FooterScrollToTopButton.canHover:hover #ToTopRocket {
+    fill: #247ba0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: rocketShake .8s cubic-bezier(.36, .07, .19, .97) alternate infinite;
+    animation: rocketShake .8s cubic-bezier(.36, .07, .19, .97) alternate infinite
+}
+
+#FooterScrollToTop .FooterScrollToTopButton.canHover:hover #ToTopRocketWindow {
+    fill: #f95c39;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: rocketShake .8s cubic-bezier(.36, .07, .19, .97) alternate infinite;
+    animation: rocketShake .8s cubic-bezier(.36, .07, .19, .97) alternate infinite
+}
+
+#FooterScrollToTop .FooterScrollToTopButton.canHover:hover #ToTopRocketFlame {
+    fill: #fcab10;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation: rocketFlame .8s ease-in-out infinite;
+    animation: rocketFlame .8s ease-in-out infinite
+}
+
+#FooterScrollToTop .FooterRocketLaunch,
+#FooterScrollToTop .FooterRocketLaunch:hover {
+    pointer-events: none
+}
+
+#FooterScrollToTop .FooterRocketLaunch .FooterScrollToTopRocket,
+#FooterScrollToTop .FooterRocketLaunch:hover .FooterScrollToTopRocket {
+    background-position: 50% -62px;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in
+}
+
+#FooterScrollToTop .FooterRocketLaunch #ToTopRocket,
+#FooterScrollToTop .FooterRocketLaunch:hover #ToTopRocket {
+    fill: #247ba0
+}
+
+#FooterScrollToTop .FooterRocketLaunch #ToTopRocketWindow,
+#FooterScrollToTop .FooterRocketLaunch:hover #ToTopRocketWindow {
+    fill: #f95c39
+}
+
+#FooterScrollToTop .FooterRocketLaunch #ToTopRocketFlame,
+#FooterScrollToTop .FooterRocketLaunch:hover #ToTopRocketFlame {
+    fill: #fcab10;
+    -webkit-transform: scale(1.5, 2);
+    -ms-transform: scale(1.5, 2);
+    transform: scale(1.5, 2);
+    -webkit-animation: none;
+    animation: none
+}
+
+@-webkit-keyframes rocketShake {
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0)
+    }
+    20%,
+    80% {
+        -webkit-transform: translate3d(1px, 0, 0);
+        transform: translate3d(1px, 0, 0)
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-2px, 0, 0);
+        transform: translate3d(-2px, 0, 0)
+    }
+    40%,
+    60% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0)
+    }
+}
+
+@keyframes rocketShake {
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0)
+    }
+    20%,
+    80% {
+        -webkit-transform: translate3d(1px, 0, 0);
+        transform: translate3d(1px, 0, 0)
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-2px, 0, 0);
+        transform: translate3d(-2px, 0, 0)
+    }
+    40%,
+    60% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0)
+    }
+}
+
+@-webkit-keyframes rocketFlame {
+    10%,
+    90% {
+        -webkit-transform: scale(.7, .6);
+        transform: scale(.7, .6)
+    }
+    20%,
+    80% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: scale(.6, .4);
+        transform: scale(.6, .4)
+    }
+    40%,
+    60% {
+        -webkit-transform: scale(1.1, 1.3);
+        transform: scale(1.1, 1.3)
+    }
+}
+
+@keyframes rocketFlame {
+    10%,
+    90% {
+        -webkit-transform: scale(.7, .6);
+        transform: scale(.7, .6)
+    }
+    20%,
+    80% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: scale(.6, .4);
+        transform: scale(.6, .4)
+    }
+    40%,
+    60% {
+        -webkit-transform: scale(1.1, 1.3);
+        transform: scale(1.1, 1.3)
+    }
+}
+
+#FooterSocialMediaIcons {
+    margin-bottom: 2rem
+}
+
+#FooterSocialMediaIcons .Header {
+    margin-bottom: 1rem;
+    color: #313233
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterSocialMediaIcons .Header {
+        color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterSocialMediaIcons .Header {
+        color: #fff
+    }
+}
+
+#FooterSocialMediaIcons .List {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+@media all and (max-width:480px) {
+    #FooterSocialMediaIcons .List {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+}
+
+#FooterSocialMediaIcons .ListItem {
+    margin: 0 .5rem 0 0;
+    padding: 0
+}
+
+#FooterSocialMediaIcons .ListItem:last-of-type {
+    margin-left: 0
+}
+
+#FooterSocialMediaIcons .ListItem .Link {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    border-radius: 50%;
+    color: #247ba0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterSocialMediaIcons .ListItem .Link {
+        color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterSocialMediaIcons .ListItem .Link {
+        color: #fff
+    }
+}
+
+#FooterSocialMediaIcons .ListItem .Link .SocialIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    vertical-align: text-bottom;
+    font-size: 2.2em;
+    text-decoration: none;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#FooterSocialMediaIcons .ListItem .Link:hover {
+    color: #fff;
+    background: #247ba0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterSocialMediaIcons .ListItem .Link:hover {
+        color: #f95c39;
+        background: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterSocialMediaIcons .ListItem .Link:hover {
+        color: #f95c39;
+        background: #fff
+    }
+}
+
+#FooterAddToHomescreen .Link {
+    color: #247ba0;
+    border-color: #247ba0;
+    background-color: transparent
+}
+
+#FooterAddToHomescreen .Link:hover {
+    color: #313233;
+    background: #fff;
+    border-color: #247ba0
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    #FooterAddToHomescreen .Link {
+        color: #fff;
+        border-color: #fff
+    }
+    #FooterAddToHomescreen .Link:hover {
+        color: #313233;
+        background: #fff;
+        border-color: #fff
+    }
+}
+
+@media all and (min-width:1025px) {
+    #FooterAddToHomescreen .Link {
+        color: #fff;
+        border-color: #fff
+    }
+    #FooterAddToHomescreen .Link:hover {
+        color: #313233;
+        background: #fff;
+        border-color: #fff
+    }
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper {
+    min-width: 30.5rem;
+    position: fixed;
+    z-index: 100;
+    left: 1em;
+    top: 5em
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper.BannerPreviewTop,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper.BannerPreviewTop,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper.BannerPreviewTop,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper.BannerPreviewTop {
+    z-index: 101
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper.BannerPreviewTop header,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper.BannerPreviewTop header,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper.BannerPreviewTop header,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper.BannerPreviewTop header {
+    background: #d33939;
+    color: #fff;
+    -webkit-box-shadow: inset 0 0 0 0 transparent;
+    box-shadow: inset 0 0 0 0 transparent
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper header,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper header,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper header,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper header {
+    position: relative;
+    font-size: 1.2rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: #c4c9cc;
+    cursor: pointer;
+    display: inline-block;
+    top: -4rem;
+    color: #929699;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .1) inset;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .1) inset
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper header:after,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper header:after,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper header:after,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper header:after {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent,
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerCompetingContent,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper #BannerPreviewContent,
+#BannerTool #BannerPreviewData #BannerCompetingWrapper #BannerCompetingContent,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper #BannerPreviewContent,
+#BannerTool #BannerCompetingData #BannerPreviewWrapper #BannerCompetingContent,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerPreviewContent,
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent {
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #c4c9cc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -4rem
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewIntro {
+    margin: 0 auto;
+    max-width: 100%
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerBox {
+    margin: 1em auto;
+    border: 1px solid #c4c9cc
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings {
+    text-align: center
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings .Section {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    text-align: left
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings .Section p {
+    margin: 0 0 .25em
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings .Section:first-child {
+    margin-top: 0
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings .Section:last-child {
+    margin-bottom: 0
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings select {
+    font-size: inherit;
+    padding: .5em;
+    background: #fff;
+    border: 1px solid #c4c9cc
+}
+
+#BannerTool #BannerPreviewData #BannerPreviewWrapper #BannerPreviewContent #BannerPreviewSettings #BannerPreviewError {
+    font-size: .8rem;
+    text-align: left;
+    color: #d33939
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper header {
+    left: 14.5rem
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent {
+    max-width: 30.5rem
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners {
+    border-top: 1px solid #c4c9cc;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 35em;
+    overflow: auto
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section {
+    margin-bottom: 1rem
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section label[for=CountryOriginSelect] {
+    display: block
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .Loading span {
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    color: #d33939
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .Loading span:nth-child(3) {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .Loading span:nth-child(4) {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+@-webkit-keyframes blink {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section #CountryOriginSelect {
+    border: 1px solid #929699;
+    margin: .5rem .5rem 0 0;
+    max-width: 80%;
+    padding: .25rem
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .EachBanner {
+    border-bottom: 1px solid #c4c9cc;
+    padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .EachBanner #CompetingBannerNumber {
+    border: 1px solid #c4c9cc;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 1rem 0 0
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .EachBanner #CompetingBannerInfo span {
+    font-weight: 700
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #CompetingBanners .Section .EachBanner #CompetingBannerInfo span.Red {
+    color: red
+}
+
+#BannerTool #BannerCompetingData #BannerCompetingWrapper #BannerCompetingContent #BannerCompetingIntro {
+    margin: 0 auto;
+    padding-bottom: .75rem;
+    max-width: 100%;
+    text-align: center
+}
+
+.AutoCompleteContainer {
+    max-height: 0;
+    overflow: visible;
+    position: absolute;
+    z-index: 25
+}
+
+.AutoCompleteContainer ul {
+    width: 100%;
+    margin-top: .3rem;
+    padding: 0 0 .3rem;
+    list-style: none;
+    border-radius: 2px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 1px #929699;
+    box-shadow: 0 1px 1px #929699;
+    background-color: #fff
+}
+
+.AutoCompleteContainer ul li {
+    display: block;
+    margin: 0;
+    padding: .4rem 0 .4rem 1.5rem;
+    text-decoration: none;
+    color: #313233;
+    background: #fff;
+    font-size: .875rem
+}
+
+@media all and (min-width:769px) and (max-width:1024px) {
+    .AutoCompleteContainer ul li {
+        padding: .2rem 0 .2rem 1.5rem
+    }
+}
+
+@media all and (min-width:1025px) {
+    .AutoCompleteContainer ul li {
+        padding: .2rem 0 .2rem 1.5rem
+    }
+}
+
+.AutoCompleteContainer ul li.TextLink:hover {
+    cursor: pointer;
+    text-decoration: none
+}
+
+.AutoCompleteContainer ul li.Selected,
+.AutoCompleteContainer ul li.TextLink:focus {
+    background-color: #f95c39;
+    color: #fff
+}
+
+.AutoCompleteContainer ul li.AutoCompleteHeading {
+    text-transform: capitalize;
+    padding-left: .5rem;
+    background-color: #fff;
+    font-size: .75rem;
+    color: #929699
+}
+
+.AutoCompleteContainer ul li.AutoCompleteHeading:hover {
+    text-decoration: none
+}
+
+#CoreSearch .AutoCompleteContainer ul {
+    margin: 4px 0 0 -1px
+}
+
+#CookieWall {
+    background: rgba(238, 238, 238, .9);
+    position: fixed;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    bottom: 0;
+    z-index: 125
+}
+
+#CookieWall .CookieContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#CookieWall .CookieContainer:before,
+#CookieWall .CookieContainer:after {
+    content: "";
+    display: block
+}
+
+#CookieWall .CookieContainer:after {
+    clear: both
+}
+
+#CookieWall .CookieContainer p {
+    float: left;
+    margin: 0;
+    width: calc(100% - 3rem);
+    font-size: .8rem
+}
+
+#CookieWall .CookieContainer #CookieButton {
+    margin-left: auto;
+    cursor: pointer;
+    float: right;
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+#CookieWall .CookieContainer #CookieButton:hover {
+    text-decoration: none
+}
+
+#CookieWall.slideUp {
+    -webkit-animation: slideUp .8s forwards;
+    animation: slideUp .8s forwards
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px)
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px)
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+}
+
+#CookieWall.slideDown {
+    -webkit-animation: slideDown .8s forwards;
+    animation: slideDown .8s forwards
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(140px);
+        transform: translateY(140px)
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(140px);
+        transform: translateY(140px)
+    }
+}
+
+#CookieWall.Hidden {
+    display: none
+}

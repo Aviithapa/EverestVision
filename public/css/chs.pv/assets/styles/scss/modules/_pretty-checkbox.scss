@@ -1,0 +1,50 @@
+.pretty {
+    white-space: normal;
+
+    .state {
+        position: relative;
+
+        label {
+            padding-left: 40px;
+            line-height: 1.5;
+            text-indent: 0;
+
+            &::before,
+            &::after {
+                width: 20px;
+                height: 20px;
+                top: 0;
+            }
+
+            &::before {
+                background-image: linear-gradient(-180deg, #FDFDFD 0%, #E7E9F3 88%, #D8DBE7 100%);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    &.p-icon {
+        .state {
+            .icon {
+                width: auto;
+                height: auto;
+                font-size: 12px;
+                top: 5px;
+                left: 2px;
+                border: none;
+                transition: all .5s ease;
+                color: #F7941E;
+            }
+        }
+    }
+
+    input {
+        font-family: "Avenir LT Std", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+    }
+
+}
+
+.pretty.p-icon input:checked~.state label:before {
+    border-color: #F7941E;
+}

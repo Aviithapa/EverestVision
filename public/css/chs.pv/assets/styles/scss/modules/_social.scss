@@ -1,0 +1,119 @@
+  .social{
+  &-header{
+    font-size: 1.5rem;
+    padding:0 1rem
+  }
+  &-footer{
+    font-size: 2rem;
+    padding: 0 1rem;
+    color: $color-footerText;
+  }
+  }
+
+  .social-footer{
+  list-style: none;
+
+  li{
+    a:hover{
+      span{
+        color: $color-brand;
+        transition: all .5s ease-in;
+      }
+    }
+  }
+  }
+
+.share-social{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  li{    
+    a{
+      display: inline-block;
+      margin: 0 25px;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      padding: 15px;
+      background: $color-brand; 
+      position: relative;
+
+      @include respond(bootstrap-small){
+        margin: 0 10px;
+        width: 36px;
+        height: 36px;        
+      }
+
+      &:after{
+        content: "";
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        position: absolute;
+        border: 1px solid $color-brand;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+
+        @include respond(bootstrap-small){          
+          width: 47px;
+          height: 47px;        
+        }
+      }
+    }
+  
+  }
+}
+
+  .social-share{
+  color: #fff;   
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include respond(bootstrap-small){          
+    font-size: 18px;
+  }
+  }
+
+  .social {
+  >li {
+    margin: 0 10px;
+    line-height: 1;
+    i {
+      @include font-size(1.6);
+    }
+  }
+  &--header {
+    color: $color-white;
+    display: flex;
+    a {
+      @include links($color-white, $color-white, $color-brand, $color-white);
+    }
+    @include respond(bootstrap-small){
+      display: none !important;
+    }
+  }
+  &--footer {}
+  &--share {}
+  &__connect {
+    >a {
+      @include links($color-brand, $color-brand, $color-white, $color-brand);
+      font-weight: 600;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+  &__separator {
+    background-color: $color-white;
+    width: 1px;
+    height: 25px;
+    @include font-size(0);
+    display: block;
+    margin: 0 5px;
+  }
+  }

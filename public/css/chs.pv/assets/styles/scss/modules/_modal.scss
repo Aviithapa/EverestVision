@@ -1,0 +1,54 @@
+.authModal{
+  .modal-header{
+    border-bottom: 0;
+    padding: 0;
+  }
+  .modal-footer{
+    display: none;
+  }
+  .modal-content{
+    padding: 5rem;
+    text-align: center;
+    border-radius: 10px;
+    
+    @include respond(phone){
+      padding: 5rem 1rem;
+    }
+  }
+  .modal-header .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  .modal-dialog{
+    @media(min-width:576px){
+      max-width: fit-content;
+    }
+  }
+  &--big{
+    .modal-dialog{
+      max-width: 928px;
+    }
+  }
+  &--small{
+    .modal-dialog{
+      @media(min-width:576px){
+        max-width: 500px;
+      }
+    }
+  }
+  .btn--large{
+    @include respond(phone){    
+      padding: 1rem 2rem;      
+      font-size: 1.5rem;    
+    }
+  }
+}
+
+.modal{
+  @include respond(phone){
+    padding-right: 0 !important;
+  }
+}

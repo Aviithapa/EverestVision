@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('/fonts/AvenirLTStd-Heavy.eot');
+    src: url('/fonts/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+        url('/fonts/AvenirLTStd-Heavy.woff') format('woff'),
+        url('/fonts/AvenirLTStd-Heavy.ttf') format('truetype'),
+        url('/fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Community-Home-Network';
+  src:  url('fonts/Community-Home-Network.eot?pi86qb');
+  src:  url('fonts/Community-Home-Network.eot?pi86qb#iefix') format('embedded-opentype'),
+    url('fonts/Community-Home-Network.ttf?pi86qb') format('truetype'),
+    url('fonts/Community-Home-Network.woff?pi86qb') format('woff'),
+    url('fonts/Community-Home-Network.svg?pi86qb#Community-Home-Network') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="chn-"], [class*=" chn-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Community-Home-Network' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.chn-logout:before {
+  content: "\e976";
+}
+.chn-air-conditioner:before {
+  content: "\e934";
+}
+.chn-bath-tub:before {
+  content: "\e936";
+}
+.chn-binocular:before {
+  content: "\e937";
+}
+.chn-buddha:before {
+  content: "\e938";
+}
+.chn-canoeing:before {
+  content: "\e939";
+}
+.chn-ceiling-fan:before {
+  content: "\e93a";
+}
+.chn-cheese:before {
+  content: "\e93b";
+}
+.chn-chef:before {
+  content: "\e93c";
+}
+.chn-city-view:before {
+  content: "\e93d";
+}
+.chn-clothes-rack:before {
+  content: "\e93e";
+}
+.chn-coffee-farm:before {
+  content: "\e93f";
+}
+.chn-cow-farm:before {
+  content: "\e940";
+}
+.chn-cycling:before {
+  content: "\e941";
+}
+.chn-dairy-center:before {
+  content: "\e942";
+}
+.chn-dining-area:before {
+  content: "\e943";
+}
+.chn-drinking-water:before {
+  content: "\e944";
+}
+.chn-drinks:before {
+  content: "\e945";
+}
+.chn-electricity:before {
+  content: "\e946";
+}
+.chn-farming:before {
+  content: "\e947";
+}
+.chn-first-aid:before {
+  content: "\e948";
+}
+.chn-fishing:before {
+  content: "\e949";
+}
+.chn-fruits:before {
+  content: "\e94a";
+}
+.chn-hiking:before {
+  content: "\e94b";
+}
+.chn-horse-riding:before {
+  content: "\e94c";
+}
+.chn-hot-shower:before {
+  content: "\e94d";
+}
+.chn-iron:before {
+  content: "\e94e";
+}
+.chn-lake-view:before {
+  content: "\e94f";
+}
+.chn-landmark:before {
+  content: "\e950";
+}
+.chn-laundry:before {
+  content: "\e951";
+}
+.chn-lecture:before {
+  content: "\e952";
+}
+.chn-linen-copy:before {
+  content: "\e953";
+}
+.chn-linen:before {
+  content: "\e954";
+}
+.chn-linkedin:before {
+  content: "\e955";
+}
+.chn-minus:before {
+  content: "\e956";
+}
+.chn-mosquito-net:before {
+  content: "\e957";
+}
+.chn-mountain-view:before {
+  content: "\e958";
+}
+.chn-nepali-leaf:before {
+  content: "\e959";
+}
+.chn-newari-feast:before {
+  content: "\e95a";
+}
+.chn-organic-farm:before {
+  content: "\e95b";
+}
+.chn-painting:before {
+  content: "\e95c";
+}
+.chn-palace:before {
+  content: "\e95d";
+}
+.chn-pottery:before {
+  content: "\e95e";
+}
+.chn-power-points:before {
+  content: "\e95f";
+}
+.chn-private-bathroom:before {
+  content: "\e960";
+}
+.chn-rafting:before {
+  content: "\e961";
+}
+.chn-river-view:before {
+  content: "\e962";
+}
+.chn-safari:before {
+  content: "\e963";
+}
+.chn-school-teaching:before {
+  content: "\e964";
+}
+.chn-shared-bathroom:before {
+  content: "\e965";
+}
+.chn-sightseeing:before {
+  content: "\e966";
+}
+.chn-sitting-area:before {
+  content: "\e967";
+}
+.chn-smoking:before {
+  content: "\e968";
+}
+.chn-speak-english:before {
+  content: "\e969";
+}
+.chn-street-view:before {
+  content: "\e96a";
+}
+.chn-sunrise:before {
+  content: "\e96b";
+}
+.chn-tea:before {
+  content: "\e96c";
+}
+.chn-temple:before {
+  content: "\e96d";
+}
+.chn-terrace:before {
+  content: "\e96e";
+}
+.chn-toilet-paper:before {
+  content: "\e96f";
+}
+.chn-towels:before {
+  content: "\e970";
+}
+.chn-trekking:before {
+  content: "\e971";
+}
+.chn-wakeup-service:before {
+  content: "\e972";
+}
+.chn-walk:before {
+  content: "\e973";
+}
+.chn-western-toilet:before {
+  content: "\e974";
+}
+.chn-yoga:before {
+  content: "\e975";
+}
+.chn-trash:before {
+  content: "\e935";
+}
+.chn-check:before {
+  content: "\e933";
+}
+.chn-hamburger:before {
+  content: "\e932";
+}
+.chn-adult:before {
+  content: "\e92f";
+}
+.chn-children:before {
+  content: "\e930";
+}
+.chn-room:before {
+  content: "\e931";
+}
+.chn-add-circle:before {
+  content: "\e900";
+}
+.chn-add:before {
+  content: "\e901";
+}
+.chn-arrow-down:before {
+  content: "\e902";
+}
+.chn-arrow-left:before {
+  content: "\e903";
+}
+.chn-arrow-right:before {
+  content: "\e904";
+}
+.chn-arrow-thin-left:before {
+  content: "\e905";
+}
+.chn-arrow-thin-right:before {
+  content: "\e906";
+}
+.chn-arrow-up:before {
+  content: "\e907";
+}
+.chn-availability:before {
+  content: "\e908";
+}
+.chn-bookmarks:before {
+  content: "\e909";
+}
+.chn-calendar-plus:before {
+  content: "\e90a";
+}
+.chn-cancel:before {
+  content: "\e90b";
+}
+.chn-card:before {
+  content: "\e90c";
+}
+.chn-certificate:before {
+  content: "\e90d";
+}
+.chn-chat-2:before {
+  content: "\e90e";
+}
+.chn-chat:before {
+  content: "\e90f";
+}
+.chn-close:before {
+  content: "\e910";
+}
+.chn-dashboard:before {
+  content: "\e911";
+}
+.chn-dining:before {
+  content: "\e912";
+}
+.chn-edit-2:before {
+  content: "\e913";
+}
+.chn-edit:before {
+  content: "\e914";
+}
+.chn-facebook:before {
+  content: "\e915";
+}
+.chn-fireplace:before {
+  content: "\e916";
+}
+.chn-googleplus:before {
+  content: "\e917";
+}
+.chn-help-circle:before {
+  content: "\e918";
+}
+.chn-instagram:before {
+  content: "\e919";
+}
+.chn-location:before {
+  content: "\e91a";
+}
+.chn-mail:before {
+  content: "\e91b";
+}
+.chn-notification:before {
+  content: "\e91c";
+}
+.chn-parking:before {
+  content: "\e91d";
+}
+.chn-people:before {
+  content: "\e91e";
+}
+.chn-pinterest:before {
+  content: "\e91f";
+}
+.chn-pool:before {
+  content: "\e920";
+}
+.chn-quote:before {
+  content: "\e921";
+}
+.chn-settings:before {
+  content: "\e922";
+}
+.chn-star-half:before {
+  content: "\e923";
+}
+.chn-star:before {
+  content: "\e924";
+}
+.chn-time:before {
+  content: "\e925";
+}
+.chn-tourist-2:before {
+  content: "\e926";
+}
+.chn-tourist:before {
+  content: "\e927";
+}
+.chn-twitter:before {
+  content: "\e928";
+}
+.chn-user:before {
+  content: "\e929";
+}
+.chn-verified:before {
+  content: "\e92a";
+}
+.chn-wheelchair:before {
+  content: "\e92b";
+}
+.chn-wifi:before {
+  content: "\e92c";
+}
+.chn-workspace:before {
+  content: "\e92d";
+}
+.chn-youtube:before {
+  content: "\e92e";
+}

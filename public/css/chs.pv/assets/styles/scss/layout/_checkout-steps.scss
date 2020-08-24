@@ -1,0 +1,184 @@
+.checkout {
+  &-steps {
+    background-color: $bg-color-1;
+    @include font($header-font, normal, normal);
+    @include font-size(1.6);
+
+    &__navbar {
+      padding: 0;
+    }
+
+    &__list {
+      margin: 0 auto;
+      counter-reset: step;
+      overflow: hidden;
+
+      @include respond(phone) {
+        display: block;
+      }
+
+      >.nav-item {
+        position: relative;
+        // margin: 0 45px;
+        margin: 0 25px;
+        padding: 0 0 0 45px;
+
+        @include respond(phone) {
+          display: none;
+        }
+
+        &:before {
+          content: '0'counter(step);
+          counter-increment: step;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          @include font($base-font, italic, 900);
+          @include font-size(2.5);
+          transform: translateY(-50%);
+          color: $color-link;
+        }
+
+        >.nav-link {
+          padding: 25px 0;
+          color: $color-link;
+
+          &:hover {
+            color: $color-link;
+          }
+
+        }
+
+        &.active {
+          display: block;
+
+          &:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: $color-brand;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          &:before {
+            color: $color-brand;
+          }
+
+          >.nav-link {
+            color: $color-brand;
+          }
+        }
+      }
+    }
+  }
+
+  &-price-info {
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    transition: all .5s ease;
+    padding: 15px 0;
+    @include font($header-font, normal, 900);
+    font-size: 1.6rem;
+    letter-spacing: 0.75px;
+  }
+
+  &-sidebar-affix {
+    &.affix {
+      top: 40px !important;
+      @media(min-width: 1199px) {
+        width: 350px;
+      }
+      @media(min-width: 768px) and (max-width: 991px) {
+        width: 100%;
+        position: relative;
+        top: auto !important;
+      }
+      @media(min-width: 992px) and (max-width: 1199px) {
+        width: 290px;
+      }
+      @include respond(phone) {
+        width: 100%;
+        position: relative;
+        top: auto!important;;
+      }
+    }
+    &.affix-bottom {
+      position: absolute;
+      width: 350px;
+      @media(min-width: 992px) and (max-width: 1199px) {
+        width: 290px;
+      }
+      @media(min-width: 768px) and (max-width: 991px) {
+        display: block;
+        position: relative;
+        top: auto!important;;
+      }
+      @include respond(phone) {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: auto!important;;
+      }
+    }
+  }
+
+  &-wrap {
+    padding: 50px 0;
+  }
+
+  &__add-experience {
+    .v-select {
+      margin: 0;
+    }
+    .pretty {
+      @include respond(phone) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.experience-price {
+  width: 100%;
+  text-align: right;
+}
+
+.pay-with {
+  h5 {
+    color: $color-desc;
+    float: left;
+    @include respond(phone) {
+      margin-bottom: 15px;
+      float: none;
+    }
+  }
+  &__cards {
+    float: right;
+    @include respond(phone) {
+      float: none;
+    }
+    img {
+      max-width: 50px;
+    }
+  }
+}
+
+.back-to {
+  border-top: 1px solid rgba(0,0,0,.1);
+  padding-top: 30px;
+  @include font($header-font, normal, 700);
+  font-size: 1.6rem;
+    a {
+      @include links($color-brand, $color-brand, #000, $color-brand);
+      i {
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.4rem;
+        margin-right: 10px;
+      }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "projectManager.any.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test"
+  ]
+}

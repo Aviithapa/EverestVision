@@ -1,0 +1,57 @@
+replicaCount: 1
+
+image:
+  repository: gcr.io/pvstaging/chs
+  tag: booking
+  pullPolicy: Always
+
+update:
+  type: RollingUpdate
+  minReadySeconds: 5
+  updatePeriodSeconds: 1
+  intervalSeconds: 1
+  timeoutSeconds: 120
+  maxSurge: "25%"
+  maxUnavailable: "20%"
+
+service:
+  type: NodePort
+  externalPort: 80
+  internalPort: 3000
+
+PodAutoscaler:
+  maxReplicas: 2
+  minReplicas: 1
+  targetCPU: 60
+
+hc:
+  liveness:
+    delay: 20
+    period: 10
+    timeout: 7
+    path: "/"
+
+  readiness:
+    delay: 20
+    period: 10
+    timeout: 7
+    path: "/"
+
+ingress:
+  enabled: false
+  hosts:
+    - chs.pvdemo.com
+
+resources: 
+  limits:
+   cpu: 100m
+   memory: 600Mi
+  requests:
+   cpu: 50m
+   memory: 300Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

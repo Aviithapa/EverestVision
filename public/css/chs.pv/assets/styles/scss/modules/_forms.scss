@@ -1,0 +1,606 @@
+.select-component {
+  margin: 0 0.8rem;
+  height: auto;
+  padding: 1.3rem 2rem;
+  font-size: 1.5rem;
+  width: 32rem;
+  border-radius: 5px;
+  color: #999;
+
+  &--alt {
+    width: 50%;
+
+  }
+
+  &--checkout {
+    height: 4.5rem;
+    width: 18.9rem;
+    max-width: 80%;
+  }
+
+  &--checkoutBig {
+    width: 350px;
+    max-width: 48%;
+    margin: 1.5rem;
+    height: 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+input,
+select,
+textarea {
+  @include font($base-font, normal, 400);
+  @include font-size(1.5);
+  @include placeholder(#808080);
+}
+
+//form-box component
+
+
+#exampleInput1 {
+  height: 5rem;
+  width: 32rem;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #808080;
+  letter-spacing: 1px;
+  padding: 1.5rem 2rem;
+  margin: 0 1.5rem 0 3rem;
+}
+
+.form-input {
+  height: 5rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #808080;
+  letter-spacing: 1px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.checkbox-theme {
+  label {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 1rem;
+    color: $color-footerText;
+
+    &::before {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+}
+
+.exampleInput1 {
+  height: 5rem;
+  width: 32rem;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #808080;
+  letter-spacing: 1px;
+  padding: 1.5rem 2rem;
+  margin: 0 1.5rem 0 3rem;
+
+  &--alt {
+    width: 350px;
+    max-width: 48%;
+    margin: 1.5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.form-checkout {
+  width: 100%;
+
+  &-group {
+    &>div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}
+
+.v-select {
+  width: 350px;
+  max-width: 48%;
+  height: 5rem;
+  padding: 0;
+  margin: 1.5rem;
+
+
+  .dropdown-toggle {
+    height: 5rem;
+    padding: 0 65px 0 10px !important;
+    @include font($base-font, normal, 400);
+    @include font-size(1.5);
+
+    &:after {
+      display: none;
+    }
+
+    .clear {
+      display: none;
+    }
+  }
+
+  .open-indicator:before {
+    border-color: $color-brand !important;
+    border-width: 2px 2px 0 0 !important;
+  }
+
+  .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, .26) !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .05) !important;
+
+    >li {
+      @include font($base-font, normal, 400);
+      @include font-size(1.5);
+
+      >a {
+        padding: 8px 15px !important;
+        color: #333;
+      }
+    }
+
+    >.highlight {
+      >a {
+        background: #F7941E !important;
+      }
+    }
+  }
+
+  &.single {
+    &.open {
+      .selected-tag {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .v-select {
+
+    input[type=search],
+    input[type=search]:focus {
+      margin-top: 15px;
+    }
+  }
+
+  &--checkout-country {
+    @include respond(tab-land) {
+      width: 100%;
+      max-width: none;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+.v-select--homestay-listing {
+  width: 100%;
+  max-width: none;
+  margin: 1rem 0;
+  // .dropdown-toggle{
+  //padding: 0 40px !important;
+  // }
+}
+
+.v-select input[type=search] {
+  // height: 100%;
+  height: 60px !important;
+  margin-top: 0 !important;
+}
+
+.v-select--brand {
+  background: $color-white;
+  border-radius: 5px;
+  margin: 0 1.5rem;
+
+  .vs__actions {
+    background: $color-brand;
+    padding: 0 15px 0 15px !important;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+
+  .open-indicator:before {
+    border-color: #FFF !important;
+    border-width: 2px 2px 0 0 !important;
+  }
+}
+
+.v-select--homestay {
+  margin: 0.5rem;
+  width: 25rem;
+
+  @include respond(tab-land) {
+    width: 23rem;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    margin: .5rem 0;
+  }
+
+  .vs__actions {
+    background: #d5d5d5;
+    padding: 0 15px 0 15px !important;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+
+  @include respond(bootstrap-small) {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.v-select--formBox {
+  width: 45%;
+
+  @include respond(bootstrap-small) {
+    width: 100%;
+  }
+}
+
+.vdp-datepicker__calendar{
+    width: 32rem !important;
+    // margin-left: 0.8rem;
+
+    @include respond(phone){
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+.vdp-datepicker{
+    position: relative;
+    @include respond(phone) {
+      width: 100%;
+    }
+    input{
+        width: 32rem;
+        padding: 1.3rem 4rem;
+        box-shadow: none;
+        border-radius: 5px;
+        border: 1px solid rgb(206, 212, 218);
+        margin: 0 0.8rem;
+        cursor: pointer;
+
+        @include respond(tab-land){
+            margin:1rem 0.8rem;
+        }
+        @include respond(bootstrap-small){
+            width: 100%;
+            margin: 1rem 0;
+        }
+        @include respond(phone) {
+          width: 100% !important;
+        }
+    }
+    &--checkout{
+        width: 350px !important;
+        max-width: 48% !important;
+        margin: 0 1.5rem !important;
+
+        input{
+            width: 100% !important;
+            padding:1.3rem 4rem 1.3rem 5rem !important;
+        }
+        @include respond(tab-port){
+            width: 100% !important;
+            max-width: none !important;
+        }
+        @include respond(tab-land){
+            width: 100% !important;
+            max-width: none !important;
+        }
+    }
+    @include respond(bootstrap-small){
+        width: 100%;
+    }
+    &--homestay{
+        input{
+            width: 32rem;
+            // padding: 1.3rem 5rem;
+            padding: 1.3rem 4rem 1.3rem 4rem;
+            margin: 1rem 0;
+            // margin:0 0.8rem;
+            // width: 20rem;
+            position: relative;
+
+            @include respond(tab-port){
+                width: 100%;
+            }
+
+        }
+        &:before{
+            content: "\e908";
+            background: red;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            color: #000;
+            font-size: 16px;
+        }
+        &-listing{
+            input{
+                width: 20rem;
+                margin: 0.5rem;
+
+                @include respond(bootstrap-small){
+                    width: 100%;
+                }
+
+                @include respond(phone) {
+                  margin: .5rem 0;
+                }
+            }
+            .chn-arrow-down{
+                @include respond(bootstrap-small){
+                    right: 2rem;
+                }
+            }
+            .vdp-datepicker__calendar{
+                width: 100% !important;
+                margin-left: 0;
+            }
+        }
+    }
+    &--formBox{
+        width: 100% !important;
+        @include respond(bootstrap-small){
+            width: 100%;
+        }
+        input{
+						width: 100%;
+						padding: 1.3rem 5rem;
+        }
+        .vdp-datepicker__calendar{
+            width: 100% !important;
+        }
+    }
+}
+
+
+.v-select--formBox{
+    width: 100%;
+    @include respond(tab-land) {
+      width: 100% !important;
+      max-width: none !important;
+    }
+
+
+  @include respond(bootstrap-small) {
+    width: 100%;
+  }
+
+    &--homestay {
+        input {
+          width: 32rem;
+          // padding: 1.3rem 5rem;
+          padding: 1.3rem 4rem 1.3rem 4rem;
+          margin: 1rem 0;
+          // margin:0 0.8rem;
+          // width: 20rem;
+          position: relative;
+
+          @include respond(tab-port) {
+            width: 100%;
+          }
+        }
+    }
+}
+
+
+.vdp-datepicker__calendar{
+    width: 32rem !important;
+    // margin-left: 0.8rem;
+
+    @include respond(phone){
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+// .vdp-datepicker{
+//     position: relative;
+//     input{
+//         width: 32rem;
+//         padding: 1.3rem 4rem;
+//         box-shadow: none;
+//         border-radius: 5px;
+//         border: 1px solid rgb(206, 212, 218);
+//         margin: 0 0.8rem;
+//         cursor: pointer;
+
+//         @include respond(tab-land){
+//             margin:1rem 0.8rem;
+//         }
+//         @include respond(bootstrap-small){
+//             width: 100%;
+//             margin: 1rem 0;
+//         }
+//     &:before {
+//       content: "\e908";
+//       background: red;
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       right: 20px;
+//       color: #000;
+//       font-size: 16px;
+//     }
+
+//     &-listing {
+//       input {
+//         width: 20rem;
+//         margin: 0.5rem;
+
+//         @include respond(bootstrap-small) {
+//           width: 100%;
+//         }
+//       }
+
+//       .chn-arrow-down {
+//         @include respond(bootstrap-small) {
+//           right: 2rem;
+//         }
+//       }
+
+//       .vdp-datepicker__calendar {
+//         width: 100% !important;
+//         margin-left: 0;
+//       }
+//     }
+//   }
+
+
+//     &--formBox{
+//         width: 100% !important;
+//         @include respond(bootstrap-small){
+//             width: 100%;
+//         }
+//         input{
+// 					width: 100%;
+// 					margin: 1rem 0;
+// 					padding: 1.3rem 5rem;
+//         }
+//         .vdp-datepicker__calendar{
+// 						width: 100% !important;
+// 						margin-left: 0;
+//         }
+
+//     input {
+//       width: 100%;
+//     }
+//   }
+// }
+
+
+.vdp-datepicker__calendar {
+  width: 32rem !important;
+  // margin-left: 0.8rem;
+
+  @include respond(phone) {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+.vdp-datepicker__calendar .disabled {
+  background: #eee !important;
+  color: #ccc !important;
+}
+
+.chn-datepicker-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $color-brand;
+  font-size: 18px;
+  left: 2rem;
+}
+
+.chn-arrow-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3rem;
+  color: $color-brand;
+}
+
+.btn,
+button,
+a,
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+.v-select--small {
+  width: 15rem;
+  @include respond(phone) {
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+.v-select.single .selected-tag {
+  margin-top: 0;
+  // height: 100%;
+  height: 60px !important;
+}
+
+.v-select.single.open .selected-tag {
+  margin-top: 0;
+}
+
+
+
+.v-select{
+    .dropdown-menu{
+        z-index: 9999 !important;
+        overflow-x: hidden;
+        >li {
+          >a {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+    }
+    .selected-tag {
+      white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // width: calc(100% - 30px);
+        width: 80%;
+        display: block !important;
+        line-height: 60px !important;
+    }
+}
+
+.homestay-list-header .v-select.single .selected-tag,
+.homestay-list-header .v-select input[type=search] {
+  height: 50px !important;
+}
+

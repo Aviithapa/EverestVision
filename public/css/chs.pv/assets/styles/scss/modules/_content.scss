@@ -1,0 +1,25 @@
+.content{
+  padding: 13.5rem 0;
+
+  @include respond(phone){
+    padding: 7.5rem 0;
+  }
+  &--100{
+    padding: 10rem 0;
+  }
+  &--alt{
+    padding-bottom: 0;
+    @include respond(tab-port) {
+      padding-bottom: 13.5rem;
+    }
+  }
+  &--green{
+    background: #F1F9EF;
+  }
+  &--small{
+    padding: 2.5rem 0;
+  }
+  &--white{
+    background: #fff;
+  }
+}

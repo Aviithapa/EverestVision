@@ -1,0 +1,7 @@
+{
+  "apiBaseUrl" : "https://chsapi.pvdemo.com/v1",
+  "stripe_public_key" : "pk_test_EaFks7U9K82aTFXEXjk6N1JN",
+  "facebook_app_id" : "125411077550816",
+  "intercom_app_id" : "tdgwsi1z",
+  "app_url" : "https://chs.pvdemo.com"
+}

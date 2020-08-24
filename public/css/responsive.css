@@ -1,0 +1,104 @@
+@media (max-width:768px) {
+    .top-info__list {
+        display: block !important;
+    }
+    .social-top {
+        justify-content: left !important;
+        padding-left: 10px;
+    }
+    .top-nav__language {
+        float: left !important;
+        padding-left: 5px;
+    }
+    .nfc-notice h4::before {
+        display: none;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, .5);
+        border-color: transparent;
+        position: absolute;
+        top: -20px;
+        right: 0;
+    }
+    .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        background: rgb(0, 56, 112);
+        left: 0px;
+        top: 28px;
+        visibility: visible;
+        z-index: 11111;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url('/nav_image/menu.png') !important;
+        transform: scale(.8);
+    }
+    .nfc-banner .nfc-region {
+        position: absolute;
+        top: 25%;
+        left: 0px;
+        z-index: 11;
+        background: #fff;
+        min-width: 150px;
+        font-size: 14px;
+    }
+    .nfc-banner .owl-next span::before,
+    .nfc-banner .owl-prev span::before,
+    .nfc-gallery .owl-nav {
+        display: none;
+    }
+    .nfc-banner .owl-dots {
+        position: absolute;
+        left: 40%;
+        bottom: 3%;
+    }
+    .nfc-logo .col-sm-8 {
+        margin-top: 0 !important;
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+    .nfc-logo .col-sm-8 h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #003870;
+        text-align: center;
+    }
+    .social-feeds iframe {
+        width: 100%;
+    }
+    .nfc-banner .nfc-region ul li ul {
+        min-width: 150px;
+        right: -150px;
+    }
+    .social-fix {
+        top: 450px;
+    }
+    .nfc-gallery__box i {
+        margin-top: 0;
+    }
+    .nfc-gl2 .nfc-gallery__box i {
+        position: absolute;
+        right: 10px !important;
+        top: -5px;
+        left: unset;
+    }
+    table {
+        max-width: 768px;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+@media (max-width:576px) {
+    .nfc-logo .img-wrap {
+        position: absolute;
+        top: -190px;
+        right: 0;
+    }
+    .nfc-board .col-sm-8 {
+        color: #003870;
+        padding-top: 0;
+        margin-top: -50px;
+    }
+}
+@media (max-width:400px) {}

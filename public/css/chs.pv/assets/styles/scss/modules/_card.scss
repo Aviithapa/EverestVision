@@ -1,0 +1,253 @@
+.customCard {
+  position: relative;
+  height: 30rem;
+  // width:36rem;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-right: 3rem;
+
+  &--medium {
+    width: 36rem;
+  }
+
+  &--large {
+    height: 55rem !important;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0rem !important;
+
+    @media(min-width: 1440px) {
+      height: 70rem !important;
+    }
+  }
+
+  &--small {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .customCard {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.customCard-caption {
+  font-family: $header-font;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.75px;
+  line-height: 27px;
+  font-weight: 700;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 5;
+}
+
+.customCard-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.captionLarge {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+  color: #fff;
+  z-index: 9;
+  border-left: 1px solid #fff;
+  padding-left: 2rem;
+
+  @include respond(phone) {
+    left: 2rem;
+    bottom: 3rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 41px;
+    letter-spacing: 0.75px;
+    color: $color-white;
+  }
+
+  &-desc {
+    color: #f4f6f1;
+    font-size: 1.4rem;
+    line-height: 25px;
+    margin: 0rem 0 1.5rem 0;
+    max-width: 308px;
+  }
+}
+
+.horizontalCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  // align-items: center;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  transition: all .5s ease-in-out;
+
+  .title{
+    transition: all .5s ease-in-out;
+    &:hover{
+      color: $color-brand !important;
+    }
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &-image {
+    height: 100%;
+    width: 40%;
+
+    @include respond(phone) {
+      width: 100%;
+      height: 30rem;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-desc {
+    padding: 2rem;
+    width: 60%;
+
+    @include respond(phone) {
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+}
+
+.checkoutCard {
+  @include respond(tab-port) {
+    margin-top: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+    font-family: $header-font;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.9px;
+    color: $color-footer;
+  }
+
+  .card-body {
+    padding: 1.7rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  &-additionals {
+    margin: 2rem 0
+  }
+
+  &-total {
+    padding: 1.4rem 0;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+.card {
+  &-impact {
+    // min-height: 100%;
+    // border-bottom: 1px solid #eee;
+    // padding-bottom: 30px;
+    height: 100%;
+    border: 1px solid #eee;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    padding: 30px 15px 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+
+    &__flexible-gutter {
+      @media(max-width: 991px) {
+        margin-bottom: 30px;
+      }
+      @include respond(phone) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 30px;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      min-height: 50px;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    &__counter {
+      @include font($header-font, normal, 900);
+      font-size: 3rem;
+      line-height: 1.5;
+      color: #fff;
+      position: relative;
+      margin-bottom: 30px;
+      display: inline-block;
+
+      &::before {
+        content: '';
+        background-color: $color-brand;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        z-index: -1;
+      }
+    }
+  }
+  &-wrap {
+    padding: 45px;
+    @include respond(tab-land) {
+      padding: 30px;
+    }
+    @include respond(tab-port) {
+      padding: 30px;
+    }
+    @include respond(phone) {
+      padding: 30px;
+    }
+  }
+}

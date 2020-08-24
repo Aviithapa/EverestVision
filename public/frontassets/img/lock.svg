@@ -1,0 +1,5 @@
+<svg id="lock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_3794" data-name="Path 3794" d="M0,0H24V24H0Z" fill="none"/>
+  <path id="Path_3795" data-name="Path 3795" d="M6,20H18V10H6Zm6-7a2,2,0,1,1-2,2A2.006,2.006,0,0,1,12,13Z" fill="#fff" opacity="0.3"/>
+  <path id="Path_3796" data-name="Path 3796" d="M18,8H17V6A5,5,0,0,0,7,6V8H6a2.006,2.006,0,0,0-2,2V20a2.006,2.006,0,0,0,2,2H18a2.006,2.006,0,0,0,2-2V10A2.006,2.006,0,0,0,18,8ZM9,6a3,3,0,0,1,6,0V8H9Zm9,14H6V10H18Zm-6-3a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,17Z" fill="#fff"/>
+</svg>
